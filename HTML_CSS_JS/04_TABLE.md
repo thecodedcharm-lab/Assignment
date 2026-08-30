@@ -112,7 +112,7 @@ e) Use `scope="col"` on column headers and `scope="row"` on at least one row hea
 f) Optionally use `id` and `headers` for better accessibility.  
 
 
-```html
+
 <div style="background-color: rgb(255, 232, 174); border-color: rgb(245, 255, 183); border-width: 2px; border-style: solid;">
 
     <h1>TABLES</h1>
@@ -539,4 +539,4 @@ f) Optionally use `id` and `headers` for better accessibility.
     <h1>----x---x----</h1>
 
 </div>
-```
+
