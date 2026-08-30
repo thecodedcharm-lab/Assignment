@@ -112,9 +112,14 @@ e) Use `scope="col"` on column headers and `scope="row"` on at least one row hea
 f) Optionally use `id` and `headers` for better accessibility.  
 
 
-<div style="background-color: rgb(255, 232, 174);border-color: rgb(245, 255, 183); border-width: 2px; border-style: solid;">
-  <h1>TABLES</h1>
-  <h3> ANSWER 01</h3>
+```html
+<div style="background-color: rgb(255, 232, 174); border-color: rgb(245, 255, 183); border-width: 2px; border-style: solid;">
+
+    <h1>TABLES</h1>
+
+    <!-- ==================== ANSWER 01 ==================== -->
+    <h3>ANSWER 01</h3>
+
     <table border="1">
         <tr>
             <th>Course Name</th>
@@ -122,105 +127,103 @@ f) Optionally use `id` and `headers` for better accessibility.
         </tr>
         <tr>
             <td>Web Development</td>
-            <td> 4 months</td>
+            <td>4 months</td>
         </tr>
         <tr>
             <td>Data Analytics</td>
             <td>5 months</td>
         </tr>
-        </table>
+    </table>
 
-        <h3> ANSWER 02</h3>
-        <table border="1">
-            <tr>
-            <caption>Monthly Workshop Schedule</caption>
-        
+
+    <!-- ==================== ANSWER 02 ==================== -->
+    <h3>ANSWER 02</h3>
+
+    <table border="1">
+        <caption>Monthly Workshop Schedule</caption>
+        <tr>
             <th>Workshop</th>
             <th>Month</th>
-             </tr>
-         <tr>
-            <td>Web Development</td>
-            <td> 4 months</td>
         </tr>
         <tr>
-            <td>Data Analytics</td>
-            <td>5 months</td>
+            <td>HTML Workshop</td>
+            <td>January</td>
         </tr>
-        </table> 
+        <tr>
+            <td>Python Workshop</td>
+            <td>February</td>
+        </tr>
+    </table>
 
 
-        <h3> ANSWER 03</h3>
-        <table border="1">
-            <tr>
-        
+    <!-- ==================== ANSWER 03 ==================== -->
+    <h3>ANSWER 03</h3>
+
+    <table border="1">
+        <tr>
             <th colspan="2">Institute Programs</th>
-             </tr>
-         <tr>
-            <td>Web Development</td>
-            <td> 4 months</td>
         </tr>
         <tr>
+            <td>Web Development</td>
             <td>Data Analytics</td>
-            <td>5 months</td>
         </tr>
-        </table> 
+    </table>
 
-<h3> ANSWER 04</h3>
-        <table border="1">
-            <tr>
-        
+
+    <!-- ==================== ANSWER 04 ==================== -->
+    <h3>ANSWER 04</h3>
+
+    <table border="1">
+        <tr>
             <th rowspan="2">Programming Track</th>
+            <td>Semester 1</td>
+        </tr>
+        <tr>
+            <td>Semester 2</td>
+        </tr>
+    </table>
+
+
+    <!-- ==================== ANSWER 05 ==================== -->
+    <h3>ANSWER 05</h3>
+
+    <table border="1">
+        <caption>Student Performance Report</caption>
+
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>A</td>
             </tr>
             <tr>
-            <th>Semester 1</th>
-            <th>Semester 2</th>
-             </tr>
-         <tr>
-            <td>Web Development</td>
-            <td>html</td>
-            <td>css</td>
-        </tr>
-        <tr>
-            <td>Data Analytics</td>
-            <td>python</td>
-            <td>sql</td>
-        </tr>
-        </table> 
-
-
-  <h3> ANSWER 05</h3>
-    <table border="1">
-    <thead>
-        <tr>
-            <caption>Student Performance Report</caption>
-            <th>Student Name</th>
-            <th>Grade</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>John Doe</td>
-            <td>A</td>
-        </tr>
-        <tr>
-            <td>Jane Smith</td>
-            <td>B</td>
-        </tr>
-        </tbody>
-        <tfoot>
-        <tr>
-            <td colspan="2">End of Report</td>
+                <td>Jane Smith</td>
+                <td>B</td>
             </tr>
-            </tfoot>
-        </table>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">End of Report</td>
+            </tr>
+        </tfoot>
+    </table>
 
 
-<h3> ANSWER 06</h3>
+    <!-- ==================== ANSWER 06 ==================== -->
+    <h3>ANSWER 06</h3>
+
     <table border="1">
         <tr>
-            <th scope="col">NAME</th>
-            <th scope="col">AGE</th>
-            <th scope="col">CITY</th>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">City</th>
         </tr>
         <tr>
             <td>John Doe</td>
@@ -232,209 +235,94 @@ f) Optionally use `id` and `headers` for better accessibility.
             <td>22</td>
             <td>Los Angeles</td>
         </tr>
-        </table>
+    </table>
 
 
-        <h3> ANSWER 07</h3>
+    <!-- ==================== ANSWER 07 ==================== -->
+    <h3>ANSWER 07</h3>
+
     <table border="1">
         <tr>
             <th scope="row">Course</th>
-            <th scope="row">Duration</th>
-            <th scope="row">Mode</th>
+            <td>Web Development</td>
         </tr>
         <tr>
-            <td>Web Development</td>
-            <td>1 Year</td>
+            <th scope="row">Duration</th>
+            <td>4 months</td>
+        </tr>
+        <tr>
+            <th scope="row">Mode</th>
             <td>Online</td>
         </tr>
-        <tr>
-            <td>Data Analytics</td>
-            <td>2 Years</td>
-            <td>Offline</td>
-        </tr>
-        </table>
+    </table>
 
 
-         <h3> ANSWER 08</h3>
+    <!-- ==================== ANSWER 08 ==================== -->
+    <h3>ANSWER 08</h3>
+
     <table border="1">
-    <thead>
         <tr>
-            
-            <th id="subject">subject</th>
-            <th id="marks">marks</th>
-            <th id="results">results</th>
+            <th id="subject">Subject</th>
+            <th id="marks">Marks</th>
+            <th id="result">Result</th>
         </tr>
-    </thead>
-    <tbody>
+
         <tr>
-            <td id="subject=html">HTML</td>
-            <td id="marks=90">90</td>
-            <td id="results=pass">Pass</td>
+            <td headers="subject">HTML</td>
+            <td headers="marks">90</td>
+            <td headers="result">Pass</td>
         </tr>
+
         <tr>
-            <td id="subject=maths">MATHS</td>
-            <td id="marks=85">85</td>
-            <td id="results=pass">Pass</td>
+            <td headers="subject">Maths</td>
+            <td headers="marks">85</td>
+            <td headers="result">Pass</td>
         </tr>
-        </tbody>
-        <tfoot>
-        <tr>
-            <td colspan="3">End of Report</td>
+    </table>
+
+
+    <!-- ==================== ANSWER 09 ==================== -->
+    <h3>ANSWER 09</h3>
+
+    <table border="1">
+        <caption>Department Summary</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Department</th>
+                <th scope="col">Students</th>
+                <th scope="col">Faculty</th>
             </tr>
-            </tfoot>
-        </table>
+        </thead>
 
-         <h3> ANSWER 09</h3>
-    <table border="1">
-    <thead>
-        <tr>
-            <caption>Department Summary</caption>
-            <th scope="col">subject</th>
-            <th scope="col">marks</th>
-            <th scope="col">results</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td id="subject=html">HTML</td>
-            <td id="marks=90">90</td>
-            <td id="results=pass">Pass</td>
-        </tr>
-        <tr>
-            <td id="subject=maths">MATHS</td>
-            <td id="marks=85">85</td>
-            <td id="results=pass">Pass</td>
-        </tr>
-        </tbody>
-        <tfoot>
-        <tr>
-            <td colspan="3">End of Report</td>
+        <tbody>
+            <tr>
+                <td>Computer Science</td>
+                <td>120</td>
+                <td>8</td>
             </tr>
-            </tfoot>
-        </table>
-<h3>ANSWER 10</h3>
-<table border="1">
-    <caption>Student Marks</caption>
 
-    <thead>
-        <tr>
-            <th scope="col">Student</th>
-            <th scope="col">Subject</th>
-            <th scope="col">Marks</th>
-        </tr>
-    </thead>
+            <tr>
+                <td>Data Science</td>
+                <td>80</td>
+                <td>6</td>
+            </tr>
+        </tbody>
 
-    <tbody>
-        <tr>
-            <th scope="row">Khushi</th>
-            <td>HTML</td>
-            <td>90</td>
-        </tr>
-        <tr>
-            <th scope="row">Rahul</th>
-            <td colspan="2">CSS - 85</td>
-        </tr>
-    </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Overall Total: 200 Students</td>
+            </tr>
+        </tfoot>
+    </table>
 
-    <tfoot>
-        <tr>
-            <td colspan="2">Average</td>
-            <td>87.5</td>
-        </tr>
-    </tfoot>
-</table>
 
-<h3>ANSWER 11</h3>
-<table border="1">
-    <caption>Weekly Class Schedule</caption>
+    <!-- ==================== ANSWER 10 ==================== -->
+    <h3>ANSWER 10</h3>
 
-    <thead>
-        <tr>
-            <th scope="col">Day</th>
-            <th scope="col">Subject</th>
-        </tr>
-    </thead>
-
-    <tbody>
-        <tr>
-            <th rowspan="3" scope="row">Monday</th>
-            <td>HTML</td>
-        </tr>
-        <tr>
-            <td>CSS</td>
-        </tr>
-        <tr>
-            <td>JavaScript</td>
-        </tr>
-    </tbody>
-</table>
-
-<H3> ANSWER 12</H3>
-<table border="1">
-
-    <thead>
-        <tr>
-            <th COLSPAN="3">Course Comparison</th>
-
-        </tr>
-    </thead>
-
-    <tbody>
-        <tr>
-            <th scope="row">Web Development</th>
-            <td>HTML, CSS, JavaScript</td>
-            <td rowspan="2">4 months</td>
-        </tr>
-        <tr>
-            <th scope="row">Data Analytics</th>
-            <td>Python, SQL, Tableau</td>
-        
-        </tr>
-</table>
-
-<h3> ANSWER 13</h3>
-<table border="1">
-    <caption>Internal Assessment Marks</caption>
-
-    <thead>
-        <tr>
-            <th scope="col">Student</th>
-            <th scope="col">Subject</th>
-            <th scope="col">Marks</th>
-        </tr>
-    </thead>
-
-    <tbody>
-        <tr>
-            <th scope="row">Khushi</th>
-            <td>HTML</td>
-            <td>90</td>
-        </tr>
-        <tr>
-            <th scope="row">Angel</th>
-            <td >HTML</td>
-            <td> 85</td>
-        </tr>
-
-        <TR>
-            <th scope="row">Harvi</th>
-            <td>HTML</td>
-            <td> 80</td>
-        </TR>
-    </tbody>
-
-    <tfoot>
-        <tr>
-            <td colspan="2">Highest Marks</td>
-            <td>90</td>
-        </tr>
-    </tfoot>
-</table>
-
-    <h3> ANSWER 14</h3>
     <table border="1">
-        <caption>Student Performance</caption>
-    
+        <caption>Student Marks</caption>
+
         <thead>
             <tr>
                 <th scope="col">Student</th>
@@ -442,64 +330,213 @@ f) Optionally use `id` and `headers` for better accessibility.
                 <th scope="col">Marks</th>
             </tr>
         </thead>
-    
+
         <tbody>
             <tr>
-                <th scope="row" id="khushi">Khushi</th>
+                <th scope="row">Khushi</th>
                 <td>HTML</td>
                 <td>90</td>
             </tr>
+
             <tr>
-                <th scope="row" id="angel">Angel</th>
+                <th scope="row">Rahul</th>
                 <td>CSS</td>
                 <td>85</td>
             </tr>
+        </tbody>
+
+        <tfoot>
             <tr>
-                <th scope="row" id="harvi">Harvi</th>
+                <td colspan="2">Average</td>
+                <td>87.5</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <!-- ==================== ANSWER 11 ==================== -->
+    <h3>ANSWER 11</h3>
+
+    <table border="1">
+        <caption>Weekly Class Schedule</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Day</th>
+                <th scope="col">Subject</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="row">Monday</th>
+                <td>HTML</td>
+            </tr>
+
+            <tr>
+                <td>CSS</td>
+            </tr>
+
+            <tr>
                 <td>JavaScript</td>
-                <td>80</td>
             </tr>
         </tbody>
     </table>
 
-    <h3> ANSWER 15</h3>
-<table border="1">
-    <caption>Student Performance</caption>
 
-    <thead>
-        <tr>
-            <th scope="col">Student</th>
-            <th scope="col">Subject</th>
-            <th scope="col">Marks</th>
-        </tr>
-    </thead>
+    <!-- ==================== ANSWER 12 ==================== -->
+    <h3>ANSWER 12</h3>
 
-    <tbody>
-        <tr>
-            <th scope="row" id="khushi">Khushi</th>
-            <td>HTML</td>
-            <td>90</td>
-        </tr>
-        <tr>
-            <th scope="row" id="angel">Angel</th>
-            <td>CSS</td>
-            <td rowspan="2">85</td>
-        </tr>
-        <tr>
-            <th scope="row" id="harvi">Harvi</th>
-            <td>JavaScript</td>
-        
-        </tr>
-    </tbody>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="3">Course Comparison</th>
+            </tr>
 
-    <tfoot>
-        <tr>
-            <td colspan="2">Average Marks</td>
-            <td>85</td>
-        </tr>
-    </tfoot>
-</table>
+            <tr>
+                <th scope="col">Course</th>
+                <th scope="col">Technology</th>
+                <th scope="col">Duration</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Web Development</th>
+                <td>HTML, CSS, JavaScript</td>
+                <td rowspan="2">4 months</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Data Analytics</th>
+                <td>Python, SQL, Tableau</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!-- ==================== ANSWER 13 ==================== -->
+    <h3>ANSWER 13</h3>
+
+    <table border="1">
+        <caption>Internal Assessment Marks</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Student</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Marks</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Khushi</th>
+                <td>HTML</td>
+                <td>90</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Angel</th>
+                <td>HTML</td>
+                <td>85</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Harvi</th>
+                <td>HTML</td>
+                <td>80</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">Highest Score</td>
+                <td>90</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <!-- ==================== ANSWER 14 ==================== -->
+    <h3>ANSWER 14</h3>
+
+    <table border="1">
+        <caption>Student Performance</caption>
+
+        <thead>
+            <tr>
+                <th id="student" scope="col">Student</th>
+                <th id="subject14" scope="col">Subject</th>
+                <th id="marks14" scope="col">Marks</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row" id="khushi">Khushi</th>
+                <td headers="khushi subject14">HTML</td>
+                <td headers="khushi marks14">90</td>
+            </tr>
+
+            <tr>
+                <th scope="row" id="angel">Angel</th>
+                <td headers="angel subject14">CSS</td>
+                <td headers="angel marks14">85</td>
+            </tr>
+
+            <tr>
+                <th scope="row" id="harvi">Harvi</th>
+                <td headers="harvi subject14">JavaScript</td>
+                <td headers="harvi marks14">80</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!-- ==================== ANSWER 15 ==================== -->
+    <h3>ANSWER 15</h3>
+
+    <table border="1">
+        <caption>Student Course Performance</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Student</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Marks</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Khushi</th>
+                <td>HTML</td>
+                <td>90</td>
+            </tr>
+
+            <tr>
+                <th rowspan="2" scope="row">Angel</th>
+                <td>CSS</td>
+                <td>85</td>
+            </tr>
+
+            <tr>
+                <td>JavaScript</td>
+                <td>88</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">Average Marks</td>
+                <td>87.6</td>
+            </tr>
+        </tfoot>
+    </table>
+
 
     <h1>----x---x----</h1>
 
 </div>
+```
