@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HTML Iframe Assignment</title>
 <style>
 body {
@@ -490,5 +485,4 @@ style="border: none;">
 <br><br>
 <hr>
 <h2>End of Iframe Assignment</h2>
-</body>
-</html>
+
