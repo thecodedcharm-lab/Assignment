@@ -3,12 +3,12 @@
 <div style="background-color: rgb(210, 222, 248); border-color: rgb(245, 255, 183); border-width: 2px; border-style: solid;">
     <h1>LINKING</h1>
 
-    <h3>ANSWER 01</h3>
-    <p>SkillForge Academy</p>
-    <a href="https://www.skillforgeacademy.com"><b>Official website of SkillForge Academy</b></a>
+<h3>ANSWER 01</h3>
+<p>SkillForge Academy</p>
+<a href="https://www.skillforgeacademy.com"><b>Official website of SkillForge Academy</b></a>
 
 
-    <h3>ANSWER 02</h3>
+<h3>ANSWER 02</h3>
 <a href="handbook.pdf" download title="Latest version 2026">Download Student Handbook</a>
 
 
