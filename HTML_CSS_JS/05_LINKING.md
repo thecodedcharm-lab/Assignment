@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkillForge Academy</title>
-</head>
 
-<body>
 
     <!-- Question 1 -->
     <!-- Question: Create a homepage paragraph with a bold external link opening in a new tab. -->
@@ -571,5 +563,3 @@
         </p>
     </section>
 
-</body>
-</html>
