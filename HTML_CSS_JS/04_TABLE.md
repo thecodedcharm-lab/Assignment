@@ -1,543 +1,564 @@
-
-### Question 1  
-Create a simple table to display course information.  
-a) Create a table with a border of 1.  
-b) Add a header row with two columns: “Course Name” and “Duration”.  
-c) Add two data rows with the following information:  
-   - Web Development – 4 months  
-   - Data Analytics – 5 months  
-
-### Question 2  
-Create a table that includes a caption.  
-a) Create a table with a border of 1.  
-b) Add the caption “Monthly Workshop Schedule”.  
-c) Create a header row with “Workshop” and “Month”.  
-d) Add two data rows of your choice related to workshops.  
-
-### Question 3  
-Create a table that uses colspan.  
-a) Create a table with a border of 1.  
-b) In the first row, create a single header cell that spans 2 columns and contains the text “Institute Programs”.  
-c) In the next row, add two normal data cells with program names of your choice.  
-
-### Question 4  
-Create a table that uses rowspan.  
-a) Create a table with a border of 1.  
-b) In the first data row, create a cell with the text “Programming Track” that spans 2 rows.  
-c) Next to it, add “Semester 1” in the first row and “Semester 2” in the second row.  
-
-### Question 5  
-Create a table using semantic grouping elements.  
-a) Create a table with a border of 1 and a caption “Student Performance Report”.  
-b) Use `<thead>` for a header row containing “Student Name” and “Grade”.  
-c) Use `<tbody>` to add two student records.  
-d) Use `<tfoot>` to add a footer row that spans both columns and shows “End of Report”.  
-
-### Question 6  
-Create a table that uses `scope="col"`.  
-a) Create a table with a border of 1.  
-b) In the header row, add three header cells: “Name”, “Age”, and “City”.  
-c) Give each header cell `scope="col"`.  
-d) Add two data rows with suitable information.  
-
-### Question 7  
-Create a table that uses `scope="row"`.  
-a) Create a table with a border of 1.  
-b) Create three rows where the first cell of each row is a header cell with `scope="row"`.  
-c) Use the row headers: “Course”, “Duration”, and “Mode”.  
-d) Add suitable data in the second column.  
-
-### Question 8  
-Create a table that uses both `id` and `headers` attributes for accessibility.  
-a) Create a table with a border of 1.  
-b) In the header row, give the header cells the ids `subject`, `marks`, and `result`.  
-c) In the data rows, use the `headers` attribute on each `<td>` to correctly link them to the related header ids.  
-d) Add at least two data rows.  
-
-### Question 9  
-Create a more complete table using multiple features together.  
-a) Create a table with a border of 1 and a caption “Department Summary”.  
-b) Use `<thead>` with column headers that have `scope="col"`.  
-c) Use `<tbody>` to add two department records.  
-d) Use `<tfoot>` to show an overall total row that uses `colspan`.  
-
-### Question 10  
-Create one complete table that includes **all** of the following features:  
-a) A border of 1  
-b) A caption  
-c) A header row using `<thead>` and `scope="col"`  
-d) At least one cell that uses `colspan` or `rowspan`  
-e) Body content inside `<tbody>`  
-f) A footer row inside `<tfoot>`  
-g) At least one row header using `scope="row"` **or** proper use of `id` and `headers` attributes  
-
-
-### Question 11  
-Create a timetable-style table using rowspan.  
-a) Create a table with a border of 1.  
-b) Add a caption “Weekly Class Schedule”.  
-c) In the first column, create a cell with the text “Monday” that spans 3 rows using `rowspan`.  
-d) Next to it, add three different subjects in separate rows (for example: HTML, CSS, JavaScript).  
-e) Add a proper header row for the columns.  
-
-### Question 12  
-Create a comparison table using both colspan and rowspan.  
-a) Create a table with a border of 1.  
-b) In the first row, create a header cell that spans 3 columns with the text “Course Comparison”.  
-c) In the following rows, use `rowspan` on one cell to merge two rows for a common category (for example “Duration”).  
-d) Fill the remaining cells with suitable comparison data.  
-
-### Question 13  
-Create a detailed marks table with semantic structure and accessibility.  
-a) Create a table with a border of 1 and caption “Internal Assessment Marks”.  
-b) Use `<thead>` with column headers and give each header `scope="col"`.  
-c) Use `<tbody>` to add three student records.  
-d) Use `<tfoot>` to show the highest score, and make that footer cell span appropriate columns using `colspan`.  
-
-### Question 14  
-Create a table that properly uses both `scope` and `headers` attributes together.  
-a) Create a table with a border of 1.  
-b) Give the column headers ids and `scope="col"`.  
-c) Make the first cell of each data row a row header with `scope="row"` and also give it an id.  
-d) In the data cells, use the `headers` attribute to link each cell to both its column header and row header.  
-e) Add at least two complete data rows.  
-
-### Question 15  
-Create one advanced table that combines multiple features.  
-a) Create a table with a border of 1.  
-b) Add a meaningful caption.  
-c) Use `<thead>`, `<tbody>`, and `<tfoot>`.  
-d) Include at least one `colspan` and one `rowspan`.  
-e) Use `scope="col"` on column headers and `scope="row"` on at least one row header.  
-f) Optionally use `id` and `headers` for better accessibility.  
-
-
-
 ```html
-<div style="background-color: rgb(255, 232, 174); border-color: rgb(245, 255, 183); border-width: 2px; border-style: solid;">
-
-    <h1>TABLES</h1>
-
-    <!-- ==================== ANSWER 01 ==================== -->
-    <h3>ANSWER 01</h3>
-
-    <table border="1">
-        <tr>
-            <th>Course Name</th>
-            <th>Duration</th>
-        </tr>
-        <tr>
-            <td>Web Development</td>
-            <td>4 months</td>
-        </tr>
-        <tr>
-            <td>Data Analytics</td>
-            <td>5 months</td>
-        </tr>
-    </table>
-
-
-    <!-- ==================== ANSWER 02 ==================== -->
-    <h3>ANSWER 02</h3>
-
-    <table border="1">
-        <caption>Monthly Workshop Schedule</caption>
-        <tr>
-            <th>Workshop</th>
-            <th>Month</th>
-        </tr>
-        <tr>
-            <td>HTML Workshop</td>
-            <td>January</td>
-        </tr>
-        <tr>
-            <td>Python Workshop</td>
-            <td>February</td>
-        </tr>
-    </table>
-
-
-    <!-- ==================== ANSWER 03 ==================== -->
-    <h3>ANSWER 03</h3>
-
-    <table border="1">
-        <tr>
-            <th colspan="2">Institute Programs</th>
-        </tr>
-        <tr>
-            <td>Web Development</td>
-            <td>Data Analytics</td>
-        </tr>
-    </table>
-
-
-    <!-- ==================== ANSWER 04 ==================== -->
-    <h3>ANSWER 04</h3>
-
-    <table border="1">
-        <tr>
-            <th rowspan="2">Programming Track</th>
-            <td>Semester 1</td>
-        </tr>
-        <tr>
-            <td>Semester 2</td>
-        </tr>
-    </table>
-
-
-    <!-- ==================== ANSWER 05 ==================== -->
-    <h3>ANSWER 05</h3>
-
-    <table border="1">
-        <caption>Student Performance Report</caption>
-
-        <thead>
-            <tr>
-                <th>Student Name</th>
-                <th>Grade</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td>John Doe</td>
-                <td>A</td>
-            </tr>
-            <tr>
-                <td>Jane Smith</td>
-                <td>B</td>
-            </tr>
-        </tbody>
-
-        <tfoot>
-            <tr>
-                <td colspan="2">End of Report</td>
-            </tr>
-        </tfoot>
-    </table>
-
-
-    <!-- ==================== ANSWER 06 ==================== -->
-    <h3>ANSWER 06</h3>
-
-    <table border="1">
-        <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Age</th>
-            <th scope="col">City</th>
-        </tr>
-        <tr>
-            <td>John Doe</td>
-            <td>20</td>
-            <td>New York</td>
-        </tr>
-        <tr>
-            <td>Jane Smith</td>
-            <td>22</td>
-            <td>Los Angeles</td>
-        </tr>
-    </table>
-
-
-    <!-- ==================== ANSWER 07 ==================== -->
-    <h3>ANSWER 07</h3>
-
-    <table border="1">
-        <tr>
-            <th scope="row">Course</th>
-            <td>Web Development</td>
-        </tr>
-        <tr>
-            <th scope="row">Duration</th>
-            <td>4 months</td>
-        </tr>
-        <tr>
-            <th scope="row">Mode</th>
-            <td>Online</td>
-        </tr>
-    </table>
-
-
-    <!-- ==================== ANSWER 08 ==================== -->
-    <h3>ANSWER 08</h3>
-
-    <table border="1">
-        <tr>
-            <th id="subject">Subject</th>
-            <th id="marks">Marks</th>
-            <th id="result">Result</th>
-        </tr>
-
-        <tr>
-            <td headers="subject">HTML</td>
-            <td headers="marks">90</td>
-            <td headers="result">Pass</td>
-        </tr>
-
-        <tr>
-            <td headers="subject">Maths</td>
-            <td headers="marks">85</td>
-            <td headers="result">Pass</td>
-        </tr>
-    </table>
-
-
-    <!-- ==================== ANSWER 09 ==================== -->
-    <h3>ANSWER 09</h3>
-
-    <table border="1">
-        <caption>Department Summary</caption>
-
-        <thead>
-            <tr>
-                <th scope="col">Department</th>
-                <th scope="col">Students</th>
-                <th scope="col">Faculty</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td>Computer Science</td>
-                <td>120</td>
-                <td>8</td>
-            </tr>
-
-            <tr>
-                <td>Data Science</td>
-                <td>80</td>
-                <td>6</td>
-            </tr>
-        </tbody>
-
-        <tfoot>
-            <tr>
-                <td colspan="3">Overall Total: 200 Students</td>
-            </tr>
-        </tfoot>
-    </table>
-
-
-    <!-- ==================== ANSWER 10 ==================== -->
-    <h3>ANSWER 10</h3>
-
-    <table border="1">
-        <caption>Student Marks</caption>
-
-        <thead>
-            <tr>
-                <th scope="col">Student</th>
-                <th scope="col">Subject</th>
-                <th scope="col">Marks</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <th scope="row">Khushi</th>
-                <td>HTML</td>
-                <td>90</td>
-            </tr>
-
-            <tr>
-                <th scope="row">Rahul</th>
-                <td>CSS</td>
-                <td>85</td>
-            </tr>
-        </tbody>
-
-        <tfoot>
-            <tr>
-                <td colspan="2">Average</td>
-                <td>87.5</td>
-            </tr>
-        </tfoot>
-    </table>
-
-
-    <!-- ==================== ANSWER 11 ==================== -->
-    <h3>ANSWER 11</h3>
-
-    <table border="1">
-        <caption>Weekly Class Schedule</caption>
-
-        <thead>
-            <tr>
-                <th scope="col">Day</th>
-                <th scope="col">Subject</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <th rowspan="3" scope="row">Monday</th>
-                <td>HTML</td>
-            </tr>
-
-            <tr>
-                <td>CSS</td>
-            </tr>
-
-            <tr>
-                <td>JavaScript</td>
-            </tr>
-        </tbody>
-    </table>
-
-
-    <!-- ==================== ANSWER 12 ==================== -->
-    <h3>ANSWER 12</h3>
-
-    <table border="1">
-        <thead>
-            <tr>
-                <th colspan="3">Course Comparison</th>
-            </tr>
-
-            <tr>
-                <th scope="col">Course</th>
-                <th scope="col">Technology</th>
-                <th scope="col">Duration</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <th scope="row">Web Development</th>
-                <td>HTML, CSS, JavaScript</td>
-                <td rowspan="2">4 months</td>
-            </tr>
-
-            <tr>
-                <th scope="row">Data Analytics</th>
-                <td>Python, SQL, Tableau</td>
-            </tr>
-        </tbody>
-    </table>
-
-
-    <!-- ==================== ANSWER 13 ==================== -->
-    <h3>ANSWER 13</h3>
-
-    <table border="1">
-        <caption>Internal Assessment Marks</caption>
-
-        <thead>
-            <tr>
-                <th scope="col">Student</th>
-                <th scope="col">Subject</th>
-                <th scope="col">Marks</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <th scope="row">Khushi</th>
-                <td>HTML</td>
-                <td>90</td>
-            </tr>
-
-            <tr>
-                <th scope="row">Angel</th>
-                <td>HTML</td>
-                <td>85</td>
-            </tr>
-
-            <tr>
-                <th scope="row">Harvi</th>
-                <td>HTML</td>
-                <td>80</td>
-            </tr>
-        </tbody>
-
-        <tfoot>
-            <tr>
-                <td colspan="2">Highest Score</td>
-                <td>90</td>
-            </tr>
-        </tfoot>
-    </table>
-
-
-    <!-- ==================== ANSWER 14 ==================== -->
-    <h3>ANSWER 14</h3>
-
-    <table border="1">
-        <caption>Student Performance</caption>
-
-        <thead>
-            <tr>
-                <th id="student" scope="col">Student</th>
-                <th id="subject14" scope="col">Subject</th>
-                <th id="marks14" scope="col">Marks</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <th scope="row" id="khushi">Khushi</th>
-                <td headers="khushi subject14">HTML</td>
-                <td headers="khushi marks14">90</td>
-            </tr>
-
-            <tr>
-                <th scope="row" id="angel">Angel</th>
-                <td headers="angel subject14">CSS</td>
-                <td headers="angel marks14">85</td>
-            </tr>
-
-            <tr>
-                <th scope="row" id="harvi">Harvi</th>
-                <td headers="harvi subject14">JavaScript</td>
-                <td headers="harvi marks14">80</td>
-            </tr>
-        </tbody>
-    </table>
-
-
-    <!-- ==================== ANSWER 15 ==================== -->
-    <h3>ANSWER 15</h3>
-
-    <table border="1">
-        <caption>Student Course Performance</caption>
-
-        <thead>
-            <tr>
-                <th scope="col">Student</th>
-                <th scope="col">Subject</th>
-                <th scope="col">Marks</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <th scope="row">Khushi</th>
-                <td>HTML</td>
-                <td>90</td>
-            </tr>
-
-            <tr>
-                <th rowspan="2" scope="row">Angel</th>
-                <td>CSS</td>
-                <td>85</td>
-            </tr>
-
-            <tr>
-                <td>JavaScript</td>
-                <td>88</td>
-            </tr>
-        </tbody>
-
-        <tfoot>
-            <tr>
-                <td colspan="2">Average Marks</td>
-                <td>87.6</td>
-            </tr>
-        </tfoot>
-    </table>
-
-
-    <h1>----x---x----</h1>
-
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML - Questions 1 to 10</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 30px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+
+        nav a {
+            margin-right: 15px;
+        }
+
+        figure {
+            margin: 15px 0;
+        }
+
+        img {
+            max-width: 300px;
+        }
+
+        aside {
+            background-color: #f0f0f0;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Semantic HTML - Complete Assignment</h1>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 1 -->
+    <!-- ===================================================== -->
+
+    <section>
+        <h2>Question 1 - Basic Semantic Page Structure</h2>
+
+        <!-- ANSWER 01 -->
+
+        <header>
+            <h1>SkillForge Academy</h1>
+            <p>Welcome to our learning platform.</p>
+        </header>
+
+        <main>
+            <article>
+                <h2>Learn Web Development</h2>
+                <p>Build your skills with practical web development courses and projects.</p>
+            </article>
+        </main>
+
+        <aside>
+            <p>Related Information: Explore our programming courses.</p>
+        </aside>
+
+        <footer>
+            <p>Copyright &copy; 2026 SkillForge Academy</p>
+        </footer>
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 2 -->
+    <!-- ===================================================== -->
+
+    <section>
+        <h2>Question 2 - Semantic News Item</h2>
+
+        <!-- ANSWER 02 -->
+
+        <article>
+
+            <header>
+                <h2>New Technology Workshop Announced</h2>
+            </header>
+
+            <p>
+                Published on
+                <time datetime="2026-08-31">August 31, 2026</time>.
+                The workshop will introduce students to
+                <mark>Artificial Intelligence</mark>
+                and modern development tools.
+            </p>
+
+            <footer>
+                <p>Source: SkillForge News</p>
+            </footer>
+
+        </article>
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 3 -->
+    <!-- ===================================================== -->
+
+    <section>
+        <h2>Question 3 - Blog Style Page</h2>
+
+        <!-- ANSWER 03 -->
+
+        <header>
+            <h1>My Tech Blog</h1>
+
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Articles</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+
+            <article>
+                <h2>Learning HTML</h2>
+                <p>HTML provides the structure and meaning of web pages.</p>
+            </article>
+
+            <article>
+                <h2>Starting with CSS</h2>
+                <p>CSS helps us style websites and create attractive layouts.</p>
+            </article>
+
+            <aside>
+                <h3>Related Links</h3>
+                <ul>
+                    <li><a href="#">HTML Basics</a></li>
+                    <li><a href="#">CSS Basics</a></li>
+                    <li><a href="#">JavaScript Basics</a></li>
+                </ul>
+            </aside>
+
+        </main>
+
+        <footer>
+            <p>Copyright &copy; 2026 My Tech Blog</p>
+        </footer>
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 4 -->
+    <!-- ===================================================== -->
+
+    <section>
+        <h2>Question 4 - FAQ with Details</h2>
+
+        <!-- ANSWER 04 -->
+
+        <h2>Frequently Asked Questions</h2>
+
+        <details>
+            <summary>What is HTML?</summary>
+            <p>HTML is the standard language used to structure web pages.</p>
+        </details>
+
+        <details>
+            <summary>What is CSS?</summary>
+            <p>CSS is used to style and design HTML elements.</p>
+        </details>
+
+        <details>
+            <summary>What is JavaScript?</summary>
+            <p>JavaScript is used to add behavior and interactivity to websites.</p>
+        </details>
+
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 5 -->
+    <!-- ===================================================== -->
+
+    <section>
+        <h2>Question 5 - Product Page Fragment</h2>
+
+        <!-- ANSWER 05 -->
+
+        <main>
+
+            <article>
+
+                <h2>Smart Study Lamp</h2>
+
+                <p>
+                    The Smart Study Lamp provides adjustable lighting
+                    for comfortable studying and reading.
+                </p>
+
+                <figure>
+                    <img src="https://via.placeholder.com/300" alt="Smart Study Lamp">
+                    <figcaption>Smart Study Lamp for students</figcaption>
+                </figure>
+
+                <details>
+                    <summary>Technical Specifications</summary>
+                    <p>Power: 12W</p>
+                    <p>Brightness: Adjustable</p>
+                    <p>Color Temperature: 3000K - 6500K</p>
+                </details>
+
+            </article>
+
+            <aside>
+                <h3>Seller Information</h3>
+                <p>Seller: TechStore</p>
+                <p>Contact: seller@example.com</p>
+            </aside>
+
+        </main>
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 6 -->
+    <!-- ===================================================== -->
+
+    <section>
+        <h2>Question 6 - Article with Time and Highlighting</h2>
+
+        <!-- ANSWER 06 -->
+
+        <article>
+
+            <header>
+                <h2>The Future of Web Development</h2>
+            </header>
+
+            <p>
+                Published on
+                <time datetime="2026-08-31">August 31, 2026</time>.
+            </p>
+
+            <p>
+                Reading time:
+                <time datetime="PT5M">5 minutes</time>.
+            </p>
+
+            <p>
+                Modern websites focus on
+                <mark>accessibility and user experience</mark>
+                to provide better experiences for everyone.
+            </p>
+
+            <aside>
+                <h3>Related Information</h3>
+                <p>Learn more about HTML, CSS, JavaScript, and responsive design.</p>
+            </aside>
+
+            <footer>
+                <p>Written by: Alex Johnson</p>
+            </footer>
+
+        </article>
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 7 -->
+    <!-- ===================================================== -->
+
+    <section>
+        <h2>Question 7 - Navigation in Three Places</h2>
+
+        <!-- ANSWER 07 -->
+
+        <header>
+            <h1>Tech Academy</h1>
+
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Courses</a>
+                <a href="#">About</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Welcome to Tech Academy</h2>
+            <p>Learn programming, web development, and modern technology skills.</p>
+        </main>
+
+        <aside>
+
+            <nav>
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">Python</a>
+            </nav>
+
+        </aside>
+
+        <footer>
+
+            <nav>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Conditions</a>
+            </nav>
+
+        </footer>
+
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 8 -->
+    <!-- ===================================================== -->
+
+    <section>
+        <h2>Question 8 - Review Section</h2>
+
+        <!-- ANSWER 08 -->
+
+        <article>
+
+            <header>
+                <h2>Student Review</h2>
+            </header>
+
+            <figure>
+                <img src="https://via.placeholder.com/300" alt="Student using a laptop">
+                <figcaption>Student learning web development</figcaption>
+            </figure>
+
+            <p>
+                Published on
+                <time datetime="2026-08-31">August 31, 2026</time>.
+            </p>
+
+            <details>
+                <summary>Read Full Review</summary>
+                <p>
+                    This course helped me understand HTML, CSS, and
+                    JavaScript through practical examples and projects.
+                </p>
+            </details>
+
+            <footer>
+                <p>Reviewed by: Student</p>
+            </footer>
+
+        </article>
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 9 -->
+    <!-- ===================================================== -->
+
+    <section>
+        <h2>Question 9 - Complete Semantic Homepage</h2>
+
+        <!-- ANSWER 09 -->
+
+        <header>
+            <h1>TechWorld</h1>
+
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Courses</a>
+                <a href="#">Blog</a>
+            </nav>
+        </header>
+
+        <main>
+
+            <section>
+
+                <article>
+
+                    <header>
+                        <h2>Learn Web Development</h2>
+                    </header>
+
+                    <p>
+                        Start learning <mark>HTML</mark> and build your first website.
+                        Published on
+                        <time datetime="2026-08-31">August 31, 2026</time>.
+                    </p>
+
+                    <figure>
+                        <img src="https://via.placeholder.com/300" alt="Web development illustration">
+                        <figcaption>Learning modern web development</figcaption>
+                    </figure>
+
+                    <details>
+                        <summary>Learn More</summary>
+                        <p>Explore HTML, CSS, JavaScript, and responsive web design.</p>
+                    </details>
+
+                    <footer>
+                        <p>Article by TechWorld Team</p>
+                    </footer>
+
+                </article>
+
+            </section>
+
+
+            <section>
+
+                <article>
+
+                    <header>
+                        <h2>Why Learn Programming?</h2>
+                    </header>
+
+                    <p>
+                        Programming helps you solve problems and create useful
+                        applications and websites.
+                    </p>
+
+                    <footer>
+                        <p>Article by TechWorld Team</p>
+                    </footer>
+
+                </article>
+
+            </section>
+
+
+            <aside>
+                <h3>Related Content</h3>
+                <p>Explore our latest technology tutorials.</p>
+            </aside>
+
+        </main>
+
+        <footer>
+            <p>Copyright &copy; 2026 TechWorld</p>
+        </footer>
+
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 10 -->
+    <!-- ===================================================== -->
+
+    <section>
+        <h2>Question 10 - News Magazine Layout</h2>
+
+        <!-- ANSWER 10 -->
+
+        <header>
+            <h1>Daily Tech Magazine</h1>
+        </header>
+
+        <main>
+
+            <section>
+
+                <article>
+
+                    <header>
+                        <h2>AI Technology Continues to Grow</h2>
+                    </header>
+
+                    <p>
+                        Published on
+                        <time datetime="2026-08-31">August 31, 2026</time>.
+                    </p>
+
+                    <p>
+                        New developments in
+                        <mark>Artificial Intelligence</mark>
+                        are changing how people work and learn.
+                    </p>
+
+                    <footer>
+                        <p>Author: Tech News Team</p>
+                    </footer>
+
+                </article>
+
+            </section>
+
+
+            <section>
+
+                <article>
+
+                    <header>
+                        <h2>New Web Development Tools Released</h2>
+                    </header>
+
+                    <p>
+                        Published on
+                        <time datetime="2026-08-30">August 30, 2026</time>.
+                    </p>
+
+                    <p>
+                        Developers are using
+                        <mark>modern development tools</mark>
+                        to create faster and more accessible websites.
+                    </p>
+
+                    <footer>
+                        <p>Author: Web News Team</p>
+                    </footer>
+
+                </article>
+
+            </section>
+
+
+            <aside>
+                <h2>Editor's Picks</h2>
+                <p>Top Technology Trends of 2026</p>
+                <p>Best Web Development Practices</p>
+                <p>Introduction to Artificial Intelligence</p>
+            </aside>
+
+        </main>
+
+        <footer>
+            <p>Copyright &copy; 2026 Daily Tech Magazine</p>
+        </footer>
+
+    </section>
+
+
+    <footer>
+        <hr>
+        <p style="text-align: center;">
+            Semantic HTML Assignment - Questions 1 to 10
+        </p>
+    </footer>
+
+</body>
+</html>
 ```
