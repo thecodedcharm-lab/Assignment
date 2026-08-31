@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>HTML Forms - Questions 1 to 42</title>
 h1 {
 text-align: center;
@@ -523,6 +519,3 @@ margin-top: 10px;
 <p style="text-align: center;">
 HTML Forms Assignment - Questions 1 to 42
 </p>
-</footer>
-</body>
-</html>
