@@ -3,8 +3,8 @@
 <div style="background-color: rgb(210, 222, 248); border-color: rgb(245, 255, 183); border-width: 2px; border-style: solid;">
     <h1>LINKING</h1>
 
-    <H3>ANSWER 01</H3>
-    <P>SkillForge Academy</P>
+    <h3>ANSWER 01</h3>
+    <p>SkillForge Academy</p>
     <a href="https://www.skillforgeacademy.com"><b>Official website of SkillForge Academy</b></a>
 
 
