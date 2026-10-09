@@ -466,3 +466,201 @@ let a6 = 10;
 let b6 = 0;
 let result29 = a6 ** b6;
 console.log(result29);
+
+
+//B] Assignment Operators
+
+//1. Simple Assignment =
+
+let studentName = "Priya";
+let marks = 92;
+
+let score = 0;
+
+let a, b, c;
+a = b = c = 50;
+
+//2. Add and Assign +=
+
+let playerScore = 80;
+playerScore += 25;
+
+let walletBalance = 1500;
+walletBalance += 120;
+
+let count = 10;
+count += 5;
+
+let msg = "Good";
+msg += " Morning";
+
+let n = 20;
+n += "5";
+
+//3. Subtract and Assign -=
+
+let health = 100;
+health -= 35;
+
+let stock = 300;
+stock -= 45;
+
+let lives = 5;
+lives -= 2;
+
+let num = "40";
+num -= 15;
+
+let x = "abc";
+x -= 5;
+
+//4. Multiply and Assign *=
+
+let price = 500;
+price *= 1.18;
+
+let quantity = 8;
+quantity *= 3;
+
+let amount = 200;
+amount *= 1.1;
+
+let val = "7";
+val *= 3;
+
+let y = "hello";
+y *= 2;
+
+//5. Divide and Assign /=
+
+let chocolates = 180;
+chocolates /= 6;
+
+let distance = 300;
+distance /= 5;
+
+let total = 400;
+total /= 8;
+
+let num = "100";
+num /= 4;
+
+let z = 50;
+z /= 0;
+
+//6. Modulus and Assign %=
+
+let number = 47;
+number %= 6;
+
+let counter = 23;
+counter %= 12;
+
+let num = 29;
+num %= 5;
+
+let x = "17";
+x %= 3;
+
+let m = 15;
+m %= 0;
+
+//7. Exponentiation and Assign **=
+
+let side = 5;
+side **= 3;
+
+let number = 4;
+number **= 2;
+
+let base = 2;
+base **= 5;
+
+let n = 4;
+n **= 0.5;
+
+let p = 2;
+p **= -1;
+
+//C] Comparison Operators
+
+//1. Loose Equality ==
+
+let value1 = "25";
+let value2 = 25;
+value1 == value2;
+
+let number = 0;
+let booleanValue = false;
+number == booleanValue;
+
+let num1 = 10;
+let num2 = "10";
+num1 == num2;
+
+null == undefined;
+
+"" == 0;
+
+[] == false;
+
+NaN == NaN;
+
+//2. Loose Inequality !=
+
+let value1 = "18";
+let value2 = 18;
+value1 != value2;
+
+let password = "1234";
+let userInput = 1234;
+password != userInput;
+
+5 != "5";
+
+0 != false;
+
+null != undefined;
+
+"" != 0;
+
+NaN != NaN;
+
+//3. Strict Equality ===
+
+let value1 = "25";
+let value2 = 25;
+value1 === value2;
+
+0 === false;
+
+null === undefined;
+
+10 === "10";
+
+true === 1;
+
+"" === 0;
+
+[] === false;
+
+//4. Strict Inequality !==
+
+let value1 = "18";
+let value2 = 18;
+value1 !== value2;
+
+0 !== false;
+
+null !== undefined;
+
+5 !== "5";
+
+true !== 1;
+
+"" !== 0;
+
+NaN !== NaN;
+
+let input = "5";
+input !== "0";
