@@ -1,670 +1,607 @@
-// =====================================================
-// ASSIGNMENT: JAVASCRIPT OPERATORS
-// =====================================================
+```javascript
+// A] Arithmetic Operators
 
+// 1. Addition (+)
 
-// =====================================================
-// A1] ARITHMETIC OPERATORS
-// 1. ADDITION (+)
-// =====================================================
+// Q1
+let classOneCollection = 15000;
+let classTwoCollection = 12500;
+console.log(classOneCollection + classTwoCollection);
 
-// 1
-let class1Collection = 15000;
-let class2Collection = 12500;
-let totalCollection = class1Collection + class2Collection;
-console.log(totalCollection);
-
-// 2
+// Q2
 let morningPages = 18;
 let eveningPages = 25;
-let totalPages = morningPages + eveningPages;
-console.log(totalPages);
+console.log(morningPages + eveningPages);
 
-// 3
-let mondayItems = 125;
-let tuesdayItems = 178;
-let totalItems = mondayItems + tuesdayItems;
-console.log(totalItems);
+// Q3
+let mondaySales = 125;
+let tuesdaySales = 178;
+console.log(mondaySales + tuesdaySales);
 
-// 4
-let a1 = "10";
-let b1 = 5;
-let result1 = a1 + b1;
-console.log(result1);
+// Q4. Predict the output
+let a = "10";
+let b = 5;
+let result = a + b;
+console.log(result); // 105, number + string produces string concatenation
 
-// 5
-let x1 = 5;
-let y1 = "3";
-let result2 = x1 + y1;
-console.log(result2);
+// Q5. Predict the output
+let x = 5;
+let y = "3";
+let result2 = x + y;
+console.log(result2); // 53, number + string produces string concatenation
 
-// 6
-let firstNumber1 = 15;
-let secondNumber1 = 27;
-let result3 = firstNumber1 + secondNumber1;
-console.log(result3);
+// Q6
+console.log(15 + 27);
 
-// 7
+// Q7
 let bookPrice = 350;
 let penPrice = 45;
-let totalPrice = bookPrice + penPrice;
-console.log(totalPrice);
+console.log(bookPrice + penPrice);
 
-// 8
-let firstValue1 = "25";
-let secondValue1 = 10;
-let result4 = firstValue1 + secondValue1;
-console.log(result4);
+// Q8. What is the result and why?
+console.log("25" + 10); // 2510, string concatenation occurs
 
-// 9
-let walletMoney = 2000;
-let item1 = 750;
-let item2 = 320;
-let totalSpent = item1 + item2;
-let remainingBalance = walletMoney - totalSpent;
+// Q9
+let walletBalance = 2000;
+let totalSpent = 750 + 320;
 console.log(totalSpent);
-console.log(remainingBalance);
+console.log(walletBalance - totalSpent);
 
-// 10
-let number1 = 5;
-let number2 = "5";
-let number3 = 5;
-
-console.log(number1 + number2 + number3);
-console.log(number1 + number3 + number2);
-console.log(number2 + number1 + number3);
+// Q10. Predict and explain the outputs
+console.log(5 + "5" + 5); // 555, operations proceed left to right and concatenate strings
+console.log(5 + 5 + "5"); // 105, numbers are added first, then concatenated
+console.log("5" + 5 + 5); // 555, operations proceed left to right and concatenate strings
 
 
-// =====================================================
-// 2. SUBTRACTION (-)
-// =====================================================
+// 2. Subtraction (-)
 
-// 1
-let totalSeats = 80;
+// Q1
+let busSeats = 80;
 let occupiedSeats = 53;
-let emptySeats = totalSeats - occupiedSeats;
-console.log(emptySeats);
+console.log(busSeats - occupiedSeats);
 
-// 2
-let totalMarks = 500;
+// Q2
+let initialMarks = 500;
 let lostMarks = 35;
-let finalMarks = totalMarks - lostMarks;
-console.log(finalMarks);
+console.log(initialMarks - lostMarks);
 
-// 3
-let totalBoxes = 2500;
+// Q3
+let warehouseBoxes = 2500;
 let sentBoxes = 875;
-let remainingBoxes = totalBoxes - sentBoxes;
-console.log(remainingBoxes);
+console.log(warehouseBoxes - sentBoxes);
 
-// 4
-let a2 = "10";
-let b2 = 3;
-let result5 = a2 - b2;
-console.log(result5);
+// Q4. Predict the output
+let a = "10";
+let b = 3;
+let result = a - b;
+console.log(result); // 7, the string is converted to a number
 
-// 5
-let x2 = "20";
-let y2 = "5";
-let result6 = x2 - y2;
-console.log(result6);
+// Q5. Predict the output
+let x = "20";
+let y = "5";
+let result2 = x - y;
+console.log(result2); // 15, both strings are converted to numbers
 
-// 6
-let firstNumber2 = 100;
-let secondNumber2 = 37;
-let result7 = firstNumber2 - secondNumber2;
-console.log(result7);
+// Q6
+console.log(100 - 37);
 
-// 7
-let totalWater = 500;
-let usedWater = 175;
-let remainingWater = totalWater - usedWater;
-console.log(remainingWater);
+// Q7
+let tankWater = 500;
+let waterUsed = 175;
+console.log(tankWater - waterUsed);
 
-// 8
-let firstValue2 = "50";
-let secondValue2 = 20;
-let thirdValue2 = "20";
+// Q8. What is the result and why?
+console.log("50" - 20); // 30, the string is converted to a number
+console.log("50" - "20"); // 30, both strings are converted to numbers
 
-let result8 = firstValue2 - secondValue2;
-let result9 = firstValue2 - thirdValue2;
+// Q9
+let apples = 240;
+let morningSales = 95;
+let eveningSales = 67;
+console.log(apples - morningSales - eveningSales);
 
-console.log(result8);
-console.log(result9);
-
-// 9
-let totalApples = 240;
-let morningSold = 95;
-let eveningSold = 67;
-let remainingApples = totalApples - morningSold - eveningSold;
-console.log(remainingApples);
-
-// 10
-let value1 = "100";
-let value2 = 50;
-let value3 = "abc";
-let value4 = 10;
-let value5 = 5;
-let value6 = "2";
-
-console.log(value1 - value2);
-console.log(value3 - value4);
-console.log(value4 - value5 - value6);
-console.log(value1 - value5 - value6);
+// Q10. Predict and explain the outputs
+console.log("100" - 50); // 50, the string is converted to a number
+console.log("abc" - 10); // NaN, abc cannot be converted to a number
+console.log(10 - "5" - "2"); // 3, both strings are converted to numbers
+console.log("10" - "5" - "2"); // 3, both strings are converted to numbers
 
 
-// =====================================================
-// 3. MULTIPLICATION (*)
-// =====================================================
+// 3. Multiplication (*)
 
-// 1
+// Q1
 let notebookPrice = 45;
-let notebooks = 8;
-let notebookTotal = notebookPrice * notebooks;
-console.log(notebookTotal);
+let notebookQuantity = 8;
+console.log(notebookPrice * notebookQuantity);
 
-// 2
+// Q2
 let bottlesPerHour = 120;
-let hours1 = 6;
-let totalBottles = bottlesPerHour * hours1;
-console.log(totalBottles);
+let productionHours = 6;
+console.log(bottlesPerHour * productionHours);
 
-// 3
-let rows = 7;
+// Q3
+let gardenRows = 7;
 let plantsPerRow = 15;
-let totalPlants = rows * plantsPerRow;
-console.log(totalPlants);
+console.log(gardenRows * plantsPerRow);
 
-// 4
-let a3 = "5";
-let b3 = 4;
-let result10 = a3 * b3;
-console.log(result10);
+// Q4. Predict the output
+let a = "5";
+let b = 4;
+let result = a * b;
+console.log(result); // 20, the string is converted to a number
 
-// 5
-let x3 = "10";
-let y3 = "2";
-let result11 = x3 * y3;
-console.log(result11);
+// Q5. Predict the output
+let x = "10";
+let y = "2";
+let result2 = x * y;
+console.log(result2); // 20, both strings are converted to numbers
 
-// 6
-let firstNumber3 = 12;
-let secondNumber3 = 8;
-let result12 = firstNumber3 * secondNumber3;
-console.log(result12);
+// Q6
+console.log(12 * 8);
 
-// 7
+// Q7
 let pizzaPrice = 299;
-let pizzas = 4;
-let pizzaTotal = pizzaPrice * pizzas;
-console.log(pizzaTotal);
+let pizzaQuantity = 4;
+console.log(pizzaPrice * pizzaQuantity);
 
-// 8
-let firstValue3 = "7";
-let secondValue3 = 6;
-let thirdValue3 = "6";
+// Q8. What is the result and why?
+console.log("7" * 6); // 42, the string is converted to a number
+console.log("7" * "6"); // 42, both strings are converted to numbers
 
-let result13 = firstValue3 * secondValue3;
-let result14 = firstValue3 * thirdValue3;
-
-console.log(result13);
-console.log(result14);
-
-// 9
+// Q9
 let unitsPerHour = 45;
-let hours2 = 8;
-let totalUnits = unitsPerHour * hours2;
-console.log(totalUnits);
+let factoryHours = 8;
+console.log(unitsPerHour * factoryHours);
 
-// 10
-let value7 = "5";
-let value8 = 3;
-let value9 = "2";
-let value10 = "abc";
-let value11 = 4;
-let value12 = 10;
-let value13 = "2.5";
-let value14 = "10";
-let value15 = "0";
-
-console.log(value7 * value8 * value9);
-console.log(value10 * value11);
-console.log(value12 * value13);
-console.log(value14 * value13 * value15);
+// Q10. Predict and explain the outputs
+console.log("5" * 3 * "2"); // 30, numeric strings are converted to numbers
+console.log("abc" * 4); // NaN, abc cannot be converted to a number
+console.log(10 * "2.5"); // 25, the string is converted to a number
+console.log("10" * "2.5" * "0"); // 0, numeric strings are converted to numbers
 
 
-// =====================================================
-// 4. DIVISION (/)
-// =====================================================
+// 4. Division (/)
 
-// 1
+// Q1
 let pencils = 144;
 let students = 12;
-let pencilsPerStudent = pencils / students;
-console.log(pencilsPerStudent);
+console.log(pencils / students);
 
-// 2
-let distance = 360;
-let hours3 = 6;
-let averageDistance = distance / hours3;
-console.log(averageDistance);
+// Q2
+let trainDistance = 360;
+let trainHours = 6;
+console.log(trainDistance / trainHours);
 
-// 3
-let totalMoney = 72000;
+// Q3
+let companyMoney = 72000;
 let departments = 9;
-let moneyPerDepartment = totalMoney / departments;
-console.log(moneyPerDepartment);
+console.log(companyMoney / departments);
 
-// 4
-let a4 = "20";
-let b4 = 4;
-let result15 = a4 / b4;
-console.log(result15);
+// Q4. Predict the output
+let a = "20";
+let b = 4;
+let result = a / b;
+console.log(result); // 5, the string is converted to a number
 
-// 5
-let x4 = "100";
-let y4 = "5";
-let result16 = x4 / y4;
-console.log(result16);
+// Q5. Predict the output
+let x = "100";
+let y = "5";
+let result2 = x / y;
+console.log(result2); // 20, both strings are converted to numbers
 
-// 6
-let firstNumber4 = 144;
-let secondNumber4 = 12;
-let result17 = firstNumber4 / secondNumber4;
-console.log(result17);
+// Q6
+console.log(144 / 12);
 
-// 7
+// Q7
 let totalStudents = 360;
 let classrooms = 9;
-let studentsPerClassroom = totalStudents / classrooms;
-console.log(studentsPerClassroom);
+console.log(totalStudents / classrooms);
 
-// 8
-let firstValue4 = "100";
-let secondValue4 = 4;
-let thirdValue4 = "4";
+// Q8
+console.log("100" / 4); // 25
+console.log("100" / "4"); // 25
 
-let result18 = firstValue4 / secondValue4;
-let result19 = firstValue4 / thirdValue4;
-
-console.log(result18);
-console.log(result19);
-
-// 9
+// Q9
 let totalBill = 2400;
 let friends = 6;
-let share = totalBill / friends;
-console.log(share);
+console.log(totalBill / friends);
 
-// 10
-let value16 = 10;
-let value17 = 0;
-let value18 = -10;
-let value19 = "20";
-let value20 = "4";
-let value21 = 2;
-let value22 = "abc";
-let value23 = 5;
-
-console.log(value16 / value17);
-console.log(value18 / value17);
-console.log(value17 / value17);
-console.log(value19 / value20 / value21);
-console.log(value22 / value23);
+// Q10. Predict and explain the outputs
+console.log(10 / 0); // Infinity, positive number divided by positive zero
+console.log(-10 / 0); // -Infinity, negative number divided by positive zero
+console.log(0 / 0); // NaN, zero divided by zero is undefined
+console.log("20" / "4" / 2); // 2.5, numeric strings are converted to numbers
+console.log("abc" / 5); // NaN, abc cannot be converted to a number
 
 
-// =====================================================
-// 5. MODULUS (%)
-// =====================================================
+// 5. Modulus (%)
 
-// 1
-let students1 = 53;
+// Q1
+let students = 53;
 let groupSize = 5;
-let remainingStudents = students1 % groupSize;
-console.log(remainingStudents);
+console.log(students % groupSize);
 
-// 2
+// Q2
 let candies = 128;
 let candiesPerBox = 10;
-let remainingCandies = candies % candiesPerBox;
-console.log(remainingCandies);
+console.log(candies % candiesPerBox);
 
-// 3
+// Q3
 let toys = 237;
 let toysPerBox = 6;
-let remainingToys = toys % toysPerBox;
-console.log(remainingToys);
+console.log(toys % toysPerBox);
 
-// 4
-let people = 185;
+// Q4
+let passengers = 185;
 let busCapacity = 40;
-let remainingPeople = people % busCapacity;
-console.log(remainingPeople);
+console.log(passengers % busCapacity);
 
-// 5
-let a5 = 10;
-let b5 = 0;
-let result20 = a5 % b5;
-console.log(result20);
+// Q5. Predict the output
+let a = 10;
+let b = 0;
+let result = a % b;
+console.log(result); // NaN, remainder with zero is undefined
 
-// 6
-let firstNumber5 = 29;
-let secondNumber5 = 5;
-let result21 = firstNumber5 % secondNumber5;
-console.log(result21);
+// Q6
+console.log(29 % 5);
 
-// 7
+// Q7
 let chocolates = 23;
-let boxSize = 4;
-let remainingChocolates = chocolates % boxSize;
-console.log(remainingChocolates);
+let chocolatesPerBox = 4;
+console.log(chocolates % chocolatesPerBox);
 
-// 8
-let firstNumber6 = 0;
-let secondNumber6 = 7;
-let thirdNumber6 = 15;
-let fourthNumber6 = 0;
+// Q8. What is the result and why?
+console.log(0 % 7); // 0, zero divided by seven has remainder zero
+console.log(15 % 0); // NaN, remainder with zero is undefined
 
-let result22 = firstNumber6 % secondNumber6;
-let result23 = thirdNumber6 % fourthNumber6;
-
-console.log(result22);
-console.log(result23);
-
-// 9
+// Q9
 let pages = 47;
 let pagesPerSheet = 6;
+console.log(Math.floor(pages / pagesPerSheet));
+console.log(pages % pagesPerSheet);
 
-let fullSheets = Math.floor(pages / pagesPerSheet);
-let remainingPages = pages % pagesPerSheet;
-
-console.log(fullSheets);
-console.log(remainingPages);
-
-// 10
-let value24 = 17;
-let value25 = -17;
-let value26 = 5;
-let value27 = -5;
-let value28 = 10;
-let value29 = 0;
-
-console.log(value24 % value26);
-console.log(value25 % value26);
-console.log(value24 % value27);
-console.log(value25 % value27);
-console.log(value28 % value29);
+// Q10. Predict and explain the outputs
+console.log(17 % 5); // 2, remainder has the same sign as the dividend
+console.log(-17 % 5); // -2, remainder has the same sign as the dividend
+console.log(17 % -5); // 2, remainder has the same sign as the dividend
+console.log(-17 % -5); // -2, remainder has the same sign as the dividend
+console.log(10 % 0); // NaN, remainder with zero is undefined
 
 
-// =====================================================
-// 6. EXPONENTIATION (**)
-// =====================================================
+// 6. Exponentiation (**)
 
-// 1
-let side1 = 6;
-let volume = side1 ** 3;
-console.log(volume);
+// Q1
+let side = 6;
+console.log(side ** 3);
 
-// 2
-let side2 = 9;
-let totalCells = side2 ** 2;
-console.log(totalCells);
+// Q2
+let cellsPerSide = 9;
+console.log(cellsPerSide ** 2);
 
-// 3
-let base1 = 5;
-let power1 = 4;
-let result24 = base1 ** power1;
-console.log(result24);
+// Q3
+console.log(5 ** 4);
 
-// 4
+// Q4
 let pixels = 1024;
-let totalPixels = pixels ** 2;
-console.log(totalPixels);
+console.log(pixels ** 2);
 
-// 5
-let base2 = 2;
-let power2 = -1;
-let result25 = base2 ** power2;
-console.log(result25);
+// Q5. Predict the output
+let base = 2;
+let power = -1;
+let result = base ** power;
+console.log(result); // 0.5, a negative exponent gives the reciprocal
 
-// 6
-let base3 = 3;
-let power3 = 4;
-let result26 = base3 ** power3;
-console.log(result26);
+// Q6
+console.log(3 ** 4);
 
-// 7
-let side3 = 9;
-let area = side3 ** 2;
-console.log(area);
+// Q7
+let squareSide = 9;
+console.log(squareSide ** 2);
 
-// 8
-let firstBase = 2;
-let firstPower = 5;
-let secondBase = 5;
-let secondPower = 2;
+// Q8. What is the result and are they the same?
+console.log(2 ** 5); // 32
+console.log(5 ** 2); // 25
+// They are not the same because the base and exponent are different
 
-let result27 = firstBase ** firstPower;
-let result28 = secondBase ** secondPower;
+// Q9. Predict and explain the outputs
+console.log(2 ** 3 ** 2); // 512, exponentiation is right-associative: 2 ** (3 ** 2)
+console.log((2 ** 3) ** 2); // 64, parentheses make the first exponentiation happen first
+console.log(2 ** -3); // 0.125, a negative exponent gives the reciprocal
+// console.log(-2 ** 2); // SyntaxError, parentheses are required around the negative base
+console.log((-2) ** 2); // 4, the negative base is squared
+console.log(4 ** 0.5); // 2, exponent 0.5 gives the square root
 
-console.log(result27);
-console.log(result28);
-
-// 9
-let firstNumber7 = 2;
-let firstPower1 = 3;
-let secondPower1 = 2;
-
-console.log(firstNumber7 ** firstPower1 ** secondPower1);
-console.log((firstNumber7 ** firstPower1) ** secondPower1);
-console.log(2 ** -3);
-console.log((-2) ** 2);
-console.log(4 ** 0.5);
-
-// 10
-let a6 = 10;
-let b6 = 0;
-let result29 = a6 ** b6;
-console.log(result29);
+// Q10. Predict the output
+let a = 10;
+let b = 0;
+let result = a ** b;
+console.log(result); // 1, any nonzero number raised to the power zero is 1
 
 
-//B] Assignment Operators
+// B] Assignment Operators
 
-//1. Simple Assignment =
+// 1. Simple Assignment (=)
 
+// Q1
 let studentName = "Priya";
 let marks = 92;
 
+// Q2
 let score = 0;
 
-let a, b, c;
-a = b = c = 50;
+// Q3
+let a = 50;
+let b = 50;
+let c = 50;
 
-//2. Add and Assign +=
+// Q4. Predict the output
+let x;
+x = 100;
+console.log(x); // 100, x is assigned the value 100
 
+// Q5. Predict the output
+let p = 15;
+let q = p;
+q = 30;
+console.log(p, q); // 15 30, changing q does not change p
+
+
+// 2. Add and Assign (+=)
+
+// Q1
 let playerScore = 80;
 playerScore += 25;
+console.log(playerScore);
 
+// Q2
 let walletBalance = 1500;
 walletBalance += 120;
+console.log(walletBalance);
 
+// Q3. Predict the output
 let count = 10;
 count += 5;
+console.log(count); // 15, adds five to count
 
+// Q4. Predict the output
 let msg = "Good";
 msg += " Morning";
+console.log(msg); // Good Morning, strings are concatenated
 
+// Q5. What is the result and why?
 let n = 20;
 n += "5";
+console.log(n); // 205, += concatenates when the right operand is a string
 
-//3. Subtract and Assign -=
 
+// 3. Subtract and Assign (-=)
+
+// Q1
 let health = 100;
 health -= 35;
+console.log(health);
 
+// Q2
 let stock = 300;
 stock -= 45;
+console.log(stock);
 
+// Q3. Predict the output
 let lives = 5;
 lives -= 2;
+console.log(lives); // 3, subtracts two from lives
 
+// Q4. Predict the output
 let num = "40";
 num -= 15;
+console.log(num); // 25, the string is converted to a number
 
+// Q5. What is the result and why?
 let x = "abc";
 x -= 5;
+console.log(x); // NaN, abc cannot be converted to a number
 
-//4. Multiply and Assign *=
 
+// 4. Multiply and Assign (*=)
+
+// Q1
 let price = 500;
 price *= 1.18;
+console.log(price);
 
+// Q2
 let quantity = 8;
 quantity *= 3;
+console.log(quantity);
 
+// Q3. Predict the output
 let amount = 200;
 amount *= 1.1;
+console.log(amount); // 220.00000000000003 may occur because of floating-point precision
 
+// Q4. Predict the output
 let val = "7";
 val *= 3;
+console.log(val); // 21, the string is converted to a number
 
+// Q5. What is the result and why?
 let y = "hello";
 y *= 2;
+console.log(y); // NaN, hello cannot be converted to a number
 
-//5. Divide and Assign /=
 
+// 5. Divide and Assign (/=)
+
+// Q1
 let chocolates = 180;
 chocolates /= 6;
+console.log(chocolates);
 
+// Q2
 let distance = 300;
 distance /= 5;
+console.log(distance);
 
+// Q3. Predict the output
 let total = 400;
 total /= 8;
+console.log(total); // 50, divides total by eight
 
+// Q4. Predict the output
 let num = "100";
 num /= 4;
+console.log(num); // 25, the string is converted to a number
 
+// Q5. What is the result and why?
 let z = 50;
 z /= 0;
+console.log(z); // Infinity, a positive number divided by positive zero
 
-//6. Modulus and Assign %=
 
+// 6. Modulus and Assign (%=)
+
+// Q1
 let number = 47;
 number %= 6;
+console.log(number);
 
+// Q2
 let counter = 23;
 counter %= 12;
+console.log(counter);
 
+// Q3. Predict the output
 let num = 29;
 num %= 5;
+console.log(num); // 4, stores the remainder
 
+// Q4. Predict the output
 let x = "17";
 x %= 3;
+console.log(x); // 2, the string is converted to a number
 
+// Q5. What is the result and why?
 let m = 15;
 m %= 0;
+console.log(m); // NaN, remainder with zero is undefined
 
-//7. Exponentiation and Assign **=
 
+// 7. Exponentiation and Assign (**=)
+
+// Q1
 let side = 5;
 side **= 3;
+console.log(side);
 
+// Q2
 let number = 4;
 number **= 2;
+console.log(number);
 
+// Q3. Predict the output
 let base = 2;
 base **= 5;
+console.log(base); // 32, two is raised to the power five
 
+// Q4. Predict the output
 let n = 4;
 n **= 0.5;
+console.log(n); // 2, exponent 0.5 gives the square root
 
+// Q5. What is the result and why?
 let p = 2;
 p **= -1;
+console.log(p); // 0.5, a negative exponent gives the reciprocal
 
-//C] Comparison Operators
 
-//1. Loose Equality ==
+// C] Comparison Operators
 
-let value1 = "25";
-let value2 = 25;
-value1 == value2;
+// 1. Loose Equality (==)
 
-let number = 0;
-let booleanValue = false;
-number == booleanValue;
+// Q1
+console.log("25" == 25);
 
-let num1 = 10;
-let num2 = "10";
-num1 == num2;
+// Q2
+console.log(0 == false);
 
-null == undefined;
+// Q3. Predict the output
+console.log(10 == "10"); // true, loose equality converts the string to a number
+console.log(null == undefined); // true, null and undefined are loosely equal
 
-"" == 0;
+// Q4. Predict the output
+console.log("" == 0); // true, an empty string converts to zero
+console.log([] == false); // true, both sides are converted through loose equality rules
 
-[] == false;
+// Q5. Why does NaN == NaN return false?
+console.log(NaN == NaN); // false, NaN is not equal to any value, including itself
 
-NaN == NaN;
 
-//2. Loose Inequality !=
+// 2. Loose Inequality (!=)
 
-let value1 = "18";
-let value2 = 18;
-value1 != value2;
+// Q1
+console.log("18" != 18);
 
+// Q2
 let password = "1234";
 let userInput = 1234;
-password != userInput;
+console.log(password != userInput);
 
-5 != "5";
+// Q3. Predict the output
+console.log(5 != "5"); // false, loose inequality converts the string to a number
+console.log(0 != false); // false, loose inequality treats zero and false as equal
 
-0 != false;
+// Q4. Predict the output
+console.log(null != undefined); // false, null and undefined are loosely equal
+console.log("" != 0); // false, an empty string converts to zero
 
-null != undefined;
+// Q5. What does NaN != NaN return and why?
+console.log(NaN != NaN); // true, NaN is not equal to itself
 
-"" != 0;
 
-NaN != NaN;
+// 3. Strict Equality (===)
 
-//3. Strict Equality ===
+// Q1
+console.log("25" === 25); // false, strict equality does not convert different types
 
-let value1 = "25";
-let value2 = 25;
-value1 === value2;
+// Q2
+console.log(0 === false);
+console.log(null === undefined);
 
-0 === false;
+// Q3. Predict the output
+console.log(10 === "10"); // false, number and string have different types
+console.log(true === 1); // false, boolean and number have different types
 
-null === undefined;
+// Q4. Predict the output
+console.log("" === 0); // false, string and number have different types
+console.log([] === false); // false, array and boolean have different types
 
-10 === "10";
+// Q5. Why is === preferred over ==?
+// Strict equality avoids implicit type conversion and gives more predictable comparisons.
 
-true === 1;
 
-"" === 0;
+// 4. Strict Inequality (!==)
 
-[] === false;
+// Q1
+console.log("18" !== 18);
 
-//4. Strict Inequality !==
+// Q2
+console.log(0 !== false);
+console.log(null !== undefined);
 
-let value1 = "18";
-let value2 = 18;
-value1 !== value2;
+// Q3. Predict the output
+console.log(5 !== "5"); // true, number and string have different types
+console.log(true !== 1); // true, boolean and number have different types
 
-0 !== false;
+// Q4. Predict the output
+console.log("" !== 0); // true, string and number have different types
+console.log(NaN !== NaN); // true, NaN is not strictly equal to itself
 
-null !== undefined;
-
-5 !== "5";
-
-true !== 1;
-
-"" !== 0;
-
-NaN !== NaN;
-
+// Q5
 let input = "5";
-input !== "0";
+console.log(input !== "0");
 
+
+// Part C] Relational Operators
 
 // 5. Greater Than (>)
 
@@ -678,29 +615,29 @@ let todayTemperature = 35;
 let yesterdayTemperature = 28;
 console.log(todayTemperature > yesterdayTemperature);
 
-// Q3
-console.log(15 > 10);
-console.log(10 > 15);
-console.log(10 > 10);
+// Q3. Predict the output
+console.log(15 > 10); // true
+console.log(10 > 15); // false
+console.log(10 > 10); // false
 
-// Q4
-console.log("20" > 15);
-console.log("5" > "10");
-console.log("abc" > 10);
+// Q4. Predict the output
+console.log("20" > 15); // true, the string is converted to a number
+console.log("5" > "10"); // true, strings are compared lexicographically
+console.log("abc" > 10); // false, abc converts to NaN
 
-// Q5
-console.log(null > 0);
-console.log(undefined > 0);
+// Q5. What is the result and why?
+console.log(null > 0); // false, null converts to zero
+console.log(undefined > 0); // false, undefined converts to NaN
 
 // Q6
 let stock = 120;
 let itemsWanted = 85;
 console.log(stock > itemsWanted);
 
-// Q7
-console.log(true > false);
-console.log("10" > "2");
-console.log(NaN > 5);
+// Q7. Predict and explain the outputs
+console.log(true > false); // true, true converts to 1 and false converts to 0
+console.log("10" > "2"); // false, the first character 1 comes before 2
+console.log(NaN > 5); // false, comparisons involving NaN return false
 
 
 // 6. Less Than (<)
@@ -715,29 +652,29 @@ let age = 16;
 let minimumAge = 18;
 console.log(age < minimumAge);
 
-// Q3
-console.log(8 < 12);
-console.log(20 < 10);
-console.log(7 < 7);
+// Q3. Predict the output
+console.log(8 < 12); // true
+console.log(20 < 10); // false
+console.log(7 < 7); // false
 
-// Q4
-console.log("8" < 10);
-console.log("20" < "3");
-console.log("hello" < 5);
+// Q4. Predict the output
+console.log("8" < 10); // true, the string is converted to a number
+console.log("20" < "3"); // true, strings are compared lexicographically
+console.log("hello" < 5); // false, hello converts to NaN
 
-// Q5
-console.log(null < 0);
-console.log(undefined < 0);
+// Q5. What is the result and why?
+console.log(null < 0); // false, null converts to zero
+console.log(undefined < 0); // false, undefined converts to NaN
 
 // Q6
 let tankCapacity = 500;
 let waterLevel = 375;
 console.log(waterLevel < tankCapacity);
 
-// Q7
-console.log(false < true);
-console.log("5" < "15");
-console.log(NaN < 10);
+// Q7. Predict and explain the outputs
+console.log(false < true); // true, false converts to 0 and true converts to 1
+console.log("5" < "15"); // false, the first character 5 comes after 1
+console.log(NaN < 10); // false, comparisons involving NaN return false
 
 
 // 7. Greater Than or Equal To (>=)
@@ -752,28 +689,28 @@ let ticketPrice = 300;
 let availableMoney = 300;
 console.log(availableMoney >= ticketPrice);
 
-// Q3
-console.log(25 >= 25);
-console.log(30 >= 25);
-console.log(20 >= 25);
+// Q3. Predict the output
+console.log(25 >= 25); // true
+console.log(30 >= 25); // true
+console.log(20 >= 25); // false
 
-// Q4
-console.log("25" >= 25);
-console.log("10" >= "2");
-console.log(null >= 0);
+// Q4. Predict the output
+console.log("25" >= 25); // true, the string is converted to a number
+console.log("10" >= "2"); // false, strings are compared lexicographically
+console.log(null >= 0); // true, null converts to zero
 
-// Q5
-console.log(undefined >= 0);
+// Q5. What is the result and why?
+console.log(undefined >= 0); // false, undefined converts to NaN
 
 // Q6
 let liftCapacity = 8;
 let peopleInside = 8;
 console.log(peopleInside >= liftCapacity);
 
-// Q7
-console.log(true >= 1);
-console.log("" >= 0);
-console.log(NaN >= NaN);
+// Q7. Predict and explain the outputs
+console.log(true >= 1); // true, true converts to 1
+console.log("" >= 0); // true, an empty string converts to zero
+console.log(NaN >= NaN); // false, comparisons involving NaN return false
 
 
 // 8. Less Than or Equal To (<=)
@@ -788,31 +725,31 @@ let studentScore = 39;
 let passingScore = 40;
 console.log(studentScore < passingScore);
 
-// Q3
-console.log(15 <= 20);
-console.log(20 <= 15);
-console.log(15 <= 15);
+// Q3. Predict the output
+console.log(15 <= 20); // true
+console.log(20 <= 15); // false
+console.log(15 <= 15); // true
 
-// Q4
-console.log("15" <= 20);
-console.log("30" <= "5");
-console.log(null <= 0);
+// Q4. Predict the output
+console.log("15" <= 20); // true, the string is converted to a number
+console.log("30" <= "5"); // true, strings are compared lexicographically
+console.log(null <= 0); // true, null converts to zero
 
-// Q5
-console.log(undefined <= 0);
+// Q5. What is the result and why?
+console.log(undefined <= 0); // false, undefined converts to NaN
 
 // Q6
 let bagCapacity = 10;
 let booksInside = 10;
 console.log(booksInside < bagCapacity);
 
-// Q7
-console.log(false <= 0);
-console.log("" <= 0);
-console.log(NaN <= 5);
+// Q7. Predict and explain the outputs
+console.log(false <= 0); // true, false converts to zero
+console.log("" <= 0); // true, an empty string converts to zero
+console.log(NaN <= 5); // false, comparisons involving NaN return false
 
 
-// Mixed Practice
+// Mixed Practice (>, <, >=, <=)
 
 // Q1
 let votingAge = 18;
@@ -824,21 +761,22 @@ console.log(temperature < 35);
 let score = 90;
 console.log(score > 85);
 
-// Q2
-console.log(10 > 5 && 5 < 10);
-console.log("10" >= 10);
-console.log(null <= undefined);
-console.log("5" < "10" && 5 > 2);
+// Q2. Predict the outputs
+console.log(10 > 5 && 5 < 10); // true, both conditions are true
+console.log("10" >= 10); // true, the string is converted to a number
+console.log(null <= undefined); // false, undefined converts to NaN
+console.log("5" < "10" && 5 > 2); // false, string comparison is false, so the whole AND expression is false
 
 // Q3
 let productPrice = 499;
 let customerMoney = 500;
 console.log(customerMoney >= productPrice);
-console.log(customerMoney > productPrice);
+console.log(customerMoney < productPrice);
 
 let change = customerMoney - productPrice;
 console.log(change);
 
-// Q4
-console.log("10" > "2");
-console.log(10 > 2);
+// Q4. Explain why
+console.log("10" > "2"); // false, strings are compared lexicographically, and 1 comes before 2
+console.log(10 > 2); // true, numbers are compared by numerical value
+```
