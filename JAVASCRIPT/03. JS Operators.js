@@ -1,4 +1,3 @@
-```javascript
 // A] Arithmetic Operators
 
 // 1. Addition (+)
@@ -779,4 +778,4 @@ console.log(change);
 // Q4. Explain why
 console.log("10" > "2"); // false, strings are compared lexicographically, and 1 comes before 2
 console.log(10 > 2); // true, numbers are compared by numerical value
-```
+
