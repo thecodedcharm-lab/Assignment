@@ -203,10 +203,11 @@ print(sum_of_factorial)
 
 N = int(input("Enter Number : "))
 N = abs(N)
+count=0
 import math
 for i in range (int(math.log10(N))+2):
-    2+2==4
-print(i)
+    count+=1
+print(count)
 
 # Q24. Sum of Digits
 
@@ -215,8 +216,8 @@ last_digit=0
 sum_of_digit=0
 import math
 for i in range (int(math.log10(N))+2):
-    sum_of_digit=sum_of_digit+last_digit
     last_digit=N%10
+    sum_of_digit=sum_of_digit+last_digit
     N=N//10
 print(sum_of_digit)
 
@@ -267,7 +268,7 @@ for i in range (int(math.log10(N))+1):
     last_digit = N % 10
     if Greatest < last_digit :
             Greatest = last_digit
-            N = N // 10
+    N = N // 10
 print(Greatest)
 
 # Q29. Smallest Digit Without min()
@@ -280,7 +281,7 @@ for i in range (int(math.log10(N))+1):
     last_digit = N % 10
     if Smallest> last_digit :
             Smallest = last_digit
-            N = N // 10
+    N = N // 10
 print(Smallest)
 
 # Q30. Reverse a Number
@@ -356,7 +357,7 @@ digit=0
 import math
 for i in range(int(math.log10(n))+1):
     d = n % 10
-    digit = digit*0+d
+    digit = digit*10+d
     n=n//10
     print(digit)
 
@@ -383,10 +384,7 @@ for i in range (len(word)):
 text=input("Enter String :- ")
 count=0
 for i in text:
-    if i =="":
-        count=count
-    else:
-        count=count+1
+    count=count+1
 print(count)
 
 # Q39. Count Vowels and Consonants
@@ -463,10 +461,10 @@ for i in text :
 #  Q45. Find the Middle Character
 
 text=input("Enter String : ")
-length=len(text)
+mid=len(text)//2
 for i in range (1,len(text)+1):
     if i % 2 != 0:
-        if i == length//2:
+        if i == mid:
             print(text[i])
 
 # Q46. First Half and Second Half
@@ -532,7 +530,7 @@ else:
 
 # Q49. Mirror the String
 
-string="madam"
+string=input("Enter String : ")
 length =len(string)-1;
 flage=True;
 for i in range(0,len(string)):
@@ -541,8 +539,6 @@ for i in range(0,len(string)):
         flage=False
         break
     length = length-1
-        
-
 if flage==True:
    print("yes")
 
@@ -603,7 +599,7 @@ for i in range (1,len(s)):
     if s[i]==s[i-1]:
         current+=1
     else:
-        current=current
+        current = 1
     if current > best:
         best=current
 
@@ -824,7 +820,7 @@ N=abs(N)
 number_of_digits=0
 sum_of_digits=0
 largest_digit=-1
-smallest_digit=100000000
+smallest_digit=9
 even_digits=0
 odd_digits=0
 import math
