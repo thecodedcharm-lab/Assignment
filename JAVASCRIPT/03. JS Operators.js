@@ -664,3 +664,181 @@ NaN !== NaN;
 
 let input = "5";
 input !== "0";
+
+
+// 5. Greater Than (>)
+
+// Q1
+let studentMarks = 78;
+let passingMarks = 40;
+console.log(studentMarks > passingMarks);
+
+// Q2
+let todayTemperature = 35;
+let yesterdayTemperature = 28;
+console.log(todayTemperature > yesterdayTemperature);
+
+// Q3
+console.log(15 > 10);
+console.log(10 > 15);
+console.log(10 > 10);
+
+// Q4
+console.log("20" > 15);
+console.log("5" > "10");
+console.log("abc" > 10);
+
+// Q5
+console.log(null > 0);
+console.log(undefined > 0);
+
+// Q6
+let stock = 120;
+let itemsWanted = 85;
+console.log(stock > itemsWanted);
+
+// Q7
+console.log(true > false);
+console.log("10" > "2");
+console.log(NaN > 5);
+
+
+// 6. Less Than (<)
+
+// Q1
+let boxCapacity = 50;
+let currentWeight = 42;
+console.log(currentWeight < boxCapacity);
+
+// Q2
+let age = 16;
+let minimumAge = 18;
+console.log(age < minimumAge);
+
+// Q3
+console.log(8 < 12);
+console.log(20 < 10);
+console.log(7 < 7);
+
+// Q4
+console.log("8" < 10);
+console.log("20" < "3");
+console.log("hello" < 5);
+
+// Q5
+console.log(null < 0);
+console.log(undefined < 0);
+
+// Q6
+let tankCapacity = 500;
+let waterLevel = 375;
+console.log(waterLevel < tankCapacity);
+
+// Q7
+console.log(false < true);
+console.log("5" < "15");
+console.log(NaN < 10);
+
+
+// 7. Greater Than or Equal To (>=)
+
+// Q1
+let distinctionMarks = 75;
+let scoredMarks = 75;
+console.log(scoredMarks >= distinctionMarks);
+
+// Q2
+let ticketPrice = 300;
+let availableMoney = 300;
+console.log(availableMoney >= ticketPrice);
+
+// Q3
+console.log(25 >= 25);
+console.log(30 >= 25);
+console.log(20 >= 25);
+
+// Q4
+console.log("25" >= 25);
+console.log("10" >= "2");
+console.log(null >= 0);
+
+// Q5
+console.log(undefined >= 0);
+
+// Q6
+let liftCapacity = 8;
+let peopleInside = 8;
+console.log(peopleInside >= liftCapacity);
+
+// Q7
+console.log(true >= 1);
+console.log("" >= 0);
+console.log(NaN >= NaN);
+
+
+// 8. Less Than or Equal To (<=)
+
+// Q1
+let speedLimit = 60;
+let vehicleSpeed = 60;
+console.log(vehicleSpeed <= speedLimit);
+
+// Q2
+let studentScore = 39;
+let passingScore = 40;
+console.log(studentScore < passingScore);
+
+// Q3
+console.log(15 <= 20);
+console.log(20 <= 15);
+console.log(15 <= 15);
+
+// Q4
+console.log("15" <= 20);
+console.log("30" <= "5");
+console.log(null <= 0);
+
+// Q5
+console.log(undefined <= 0);
+
+// Q6
+let bagCapacity = 10;
+let booksInside = 10;
+console.log(booksInside < bagCapacity);
+
+// Q7
+console.log(false <= 0);
+console.log("" <= 0);
+console.log(NaN <= 5);
+
+
+// Mixed Practice
+
+// Q1
+let votingAge = 18;
+console.log(18 >= votingAge);
+
+let temperature = 32;
+console.log(temperature < 35);
+
+let score = 90;
+console.log(score > 85);
+
+// Q2
+console.log(10 > 5 && 5 < 10);
+console.log("10" >= 10);
+console.log(null <= undefined);
+console.log("5" < "10" && 5 > 2);
+
+// Q3
+let productPrice = 499;
+let customerMoney = 500;
+console.log(customerMoney >= productPrice);
+console.log(customerMoney > productPrice);
+
+let change = customerMoney - productPrice;
+console.log(change);
+
+// Q4
+console.log("10" > "2");
+console.log(10 > 2);
