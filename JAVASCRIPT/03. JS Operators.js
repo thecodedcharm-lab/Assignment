@@ -779,3 +779,92 @@ console.log(change);
 console.log("10" > "2"); // false, strings are compared lexicographically, and 1 comes before 2
 console.log(10 > 2); // true, numbers are compared by numerical value
 
+
+// Part E: Increment / Decrement Operators (++ / --)
+
+// Part a
+
+// Q1. Increment Counter
+let counter = 5;
+counter++;
+console.log(counter);
+
+// Q2. Decrement Lives
+let lives = 3;
+lives--;
+console.log(lives);
+
+// Q3. Increment Score
+let score = 10;
+score++;
+console.log(score);
+
+// Q4. Decrement Items
+let items = 8;
+items--;
+console.log(items);
+
+// Q5. Increment Count Twice
+let count = 0;
+count++;
+count++;
+console.log(count);
+
+
+// Part b
+
+// Q6. Post-Increment
+let x = 5;
+let y = x++;
+console.log(x, y); // 6 5, post-increment uses the old value before increasing x
+
+// Q7. Pre-Increment
+let a = 5;
+let b = ++a;
+console.log(a, b); // 6 6, pre-increment increases a before assigning its value to b
+
+// Q8. Post-Decrement
+let lives = 3;
+let previousLives = lives--;
+console.log(lives, previousLives); // 2 3, post-decrement uses the old value before decreasing lives
+
+// Q9. Pre-Increment
+let attempts = 0;
+let currentAttempts = ++attempts;
+console.log(attempts, currentAttempts); // 1 1, pre-increment increases attempts before assigning its value
+
+// Q10. Increment and Decrement Points
+let points = 100;
+points++;
+points--;
+console.log(points);
+
+
+// Part c
+
+// Q11. Predict the Output
+let x = 10;
+let y = x++;
+let z = ++x;
+console.log(x, y, z); // 12 10 12, post-increment uses the old value and pre-increment increases x first
+
+// Q12. Predict the Output
+let a = 5;
+let b = a-- + ++a;
+console.log(a, b); // 5 10, a-- uses 5 then decreases a, and ++a increases it back to 5 before using it
+
+// Q13. Predict the Output
+let m = 7;
+let n = --m + m++;
+console.log(m, n); // 6 12, --m decreases m to 6 first, then m++ uses 6 and increases m to 7
+
+// Q14. Predict the Output
+let p = 3;
+let q = p++ + ++p + p;
+console.log(p, q); // 5 13, p++ uses 3, ++p increases p to 5, and the final p is 5
+
+// Q15. Predict the Output
+let val = 0;
+val = val++ + ++val;
+console.log(val); // 2, val++ uses 0 and ++val increases val to 2 before using it
+
