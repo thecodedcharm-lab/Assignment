@@ -868,3 +868,95 @@ let val = 0;
 val = val++ + ++val;
 console.log(val); // 2, val++ uses 0 and ++val increases val to 2 before using it
 
+// Part F]: Logical Operators
+
+//  1. Logical AND &&
+
+// 1.
+
+let StoredUsername = "admin" ;
+let StoredPassword = 1234 ;
+let EnteredUsername =  "admin" ;
+let EnteredPassword = 1234 ;
+let correctUsername = StoredUsername===EnteredUsername;
+let correctPassword = StoredPassword===EnteredPassword;
+let valid = correctPassword && correctUsername;
+console.log(valid)
+if (valid == true){
+    console.log("Correct Login Details! ")
+}else{
+    console.log("Invaild Login Details! ")
+}
+
+// 2.
+
+let isLoggedIn = true;
+let hasPermission = true;
+let canAccess= isLoggedIn && hasPermission;
+console.log(canAccess)
+
+// 3.
+
+let inStock = true
+let price = 800
+let inBuget = price <= 1000;
+let canBeBought = inStock && inBuget;
+console.log(canBeBought)
+
+// 4.
+
+let studentMarks = 75 ;
+let studentAttendance = 80;
+let passingMarks = studentMarks >= 65;
+let passingAttendance = studentAttendance >= 70;
+let isPassing = passingAttendance && passingMarks;
+console.log(isPassing)
+
+// 5.
+
+let isWeekend = true;
+let isHoliday = false;
+let isParty = isHoliday && isWeekend;
+console.log(isParty) 
+
+// 6.
+
+let a = 0;
+let b = 10;
+let result = a && b;
+console.log(result); 
+//0
+
+// 7.
+
+let x = 5;
+let y = 10;
+let result = (x > 3 && y) || 0;
+console.log(result);
+// 10
+
+// 8.
+
+let p = "Hello";
+let q = "";
+let r = "World";
+let result = p && q && r;
+console.log(result);
+// empty space ""
+
+// 9.
+
+let val = 5;
+let condition = val && (val = 0);
+console.log(condition);
+console.log(val);
+// 0
+// 0
+
+// 10.
+
+let x = 10;
+let y = 20;
+let result = (x && y) && (x > y);
+console.log(result);
+//false
