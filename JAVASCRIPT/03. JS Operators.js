@@ -960,3 +960,81 @@ let y = 20;
 let result = (x && y) && (x > y);
 console.log(result);
 //false
+
+// 2. Logical OR ||
+
+// 1.
+
+let passwordCorrect = true;
+let otpValid = false;
+let login = passwordCorrect || otpValid;
+console.log(login);
+
+// 2.
+
+let isMember = false;
+let hasCoupon = true;
+let discountApplies = isMember || hasCoupon;
+console.log(discountApplies);
+
+// 3.
+
+let age = 16;
+let height = 155;
+let isEntryAllowed = age > 18 || height > 150;
+console.log( isEntryAllowed );
+
+// 4.
+
+let emailGiven = true;
+let phoneGiven = false;
+let isForValid = emailGiven || phoneGiven;
+console.log( isForValid );
+
+// 5.
+
+let score = 900;
+let timeBonus = true;
+let gameLevelOpens = score>=1000 || timeBonus
+console.log( gameLevelOpens );
+
+// 6.
+
+let a = 0;
+let b = false;
+let c = "";
+let d = null;
+let e = 42;
+let result = a || b || c || d || e;
+console.log(result);
+//42
+
+// 7.
+
+let x = "Hello" || 0;
+let y = 0 || "Hi";
+console.log(x, y);
+// Hello Hi
+
+// 8.
+
+let a = 10;
+let b = 20;
+let result = (a < 5) || (b > 15);
+console.log(result);
+// true
+
+// 9. 
+
+let val = 5;
+let condition = val || (val = 0);
+console.log(condition);
+console.log(val);
+// 5
+// 5
+
+// 10.
+
+let x = "" || 0 || false || null || undefined || "OK";
+console.log(x);
+// OK
