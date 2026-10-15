@@ -1,0 +1,481 @@
+// ==================== A] if Statement ====================
+
+// Q1. Divisible by 5
+let number1 = 25;
+
+if (number1 % 5 === 0) {
+    console.log("Divisible by 5");
+}
+
+
+// Q2. Senior Citizen
+let age1 = 65;
+
+if (age1 >= 60) {
+    console.log("Senior Citizen");
+}
+
+
+// Q3. Big Number
+let number2 = 150;
+
+if (number2 > 100) {
+    console.log("Big Number");
+}
+
+
+// Q4. Very Cold
+let temperature = 5;
+
+if (temperature < 10) {
+    console.log("Very Cold");
+}
+
+
+// Q5. Perfect Score
+let marks1 = 100;
+
+if (marks1 === 100) {
+    console.log("Perfect Score");
+}
+
+
+// Q6. Negative Number
+let number3 = -10;
+
+if (number3 < 0) {
+    console.log("Negative Number");
+}
+
+
+// Q7. Empty String
+let userInput = "";
+
+if (userInput === "") {
+    console.log("No input provided");
+}
+
+
+// Q8. Century Year
+let year1 = 2000;
+
+if (year1 % 100 === 0) {
+    console.log("Century Year");
+}
+
+
+// Q9. Positive Even Number
+let number4 = 8;
+
+if (number4 > 0 && number4 % 2 === 0) {
+    console.log("Positive Even Number");
+}
+
+
+// Q10. Valid Marks
+let marks2 = 75;
+
+if (marks2 >= 35 && marks2 <= 100) {
+    console.log("Valid Marks");
+}
+
+
+
+// ==================== B] if...else Statement ====================
+
+// Q1. Even or Odd
+let number5 = 7;
+
+if (number5 % 2 === 0) {
+    console.log("Even");
+} else {
+    console.log("Odd");
+}
+
+
+// Q2. Voting Eligibility
+let age2 = 20;
+
+if (age2 >= 18) {
+    console.log("Eligible");
+} else {
+    console.log("Not Eligible");
+}
+
+
+// Q3. Positive or Negative
+let number6 = -5;
+
+if (number6 >= 0) {
+    console.log("Positive");
+} else {
+    console.log("Negative");
+}
+
+
+// Q4. Pass or Fail
+let marks3 = 60;
+
+if (marks3 >= 35) {
+    console.log("Passed");
+} else {
+    console.log("Failed");
+}
+
+
+// Q5. Uppercase Letter
+let character = "A";
+
+if (character >= "A" && character <= "Z") {
+    console.log("Uppercase Letter");
+} else {
+    console.log("Not an Uppercase Letter");
+}
+
+
+// Q6. Divisible by 3
+let number7 = 12;
+
+if (number7 % 3 === 0) {
+    console.log("Divisible by 3");
+} else {
+    console.log("Not Divisible by 3");
+}
+
+
+// Q7. Password Check
+let password = "admin123";
+
+if (password === "admin123") {
+    console.log("Login Successful");
+} else {
+    console.log("Incorrect Password");
+}
+
+
+// Q8. Leap Year (Basic Rule)
+let year2 = 2024;
+
+if (year2 % 4 === 0) {
+    console.log("Leap Year");
+} else {
+    console.log("Not a Leap Year");
+}
+
+
+// Q9. Greater of Two Numbers
+let number8 = 25;
+let number9 = 40;
+
+if (number8 > number9) {
+    console.log(number8 + " is Greater");
+} else {
+    console.log(number9 + " is Greater or Equal");
+}
+
+
+// Q10. Positive, Negative, or Zero
+let number10 = 0;
+
+if (number10 > 0) {
+    console.log("Positive");
+} else {
+    if (number10 < 0) {
+        console.log("Negative");
+    } else {
+        console.log("Zero");
+    }
+}
+
+
+
+// ==================== C] if...else if...else Statement ====================
+
+// Q1. Season Based on Month
+let month = 4;
+
+if (month === 12 || month === 1 || month === 2) {
+    console.log("Winter");
+} else if (month >= 3 && month <= 5) {
+    console.log("Summer");
+} else if (month >= 6 && month <= 8) {
+    console.log("Monsoon");
+} else if (month >= 9 && month <= 11) {
+    console.log("Autumn");
+} else {
+    console.log("Invalid Month");
+}
+
+
+// Q2. Income Tax Calculator
+let income = 500000;
+let tax;
+
+if (income < 300000) {
+    tax = 0;
+} else if (income <= 700000) {
+    tax = income * 0.05;
+} else if (income <= 1000000) {
+    tax = income * 0.10;
+} else {
+    tax = income * 0.15;
+}
+
+console.log("Tax Amount: ₹" + tax);
+
+
+// Q3. Student Score
+let score = 85;
+
+if (score >= 90) {
+    console.log("Outstanding");
+} else if (score >= 70) {
+    console.log("Good");
+} else if (score >= 40) {
+    console.log("Average");
+} else {
+    console.log("Needs Improvement");
+}
+
+
+// Q4. Vehicle Speed
+let speed = 60;
+
+if (speed < 40) {
+    console.log("Slow");
+} else if (speed <= 80) {
+    console.log("Normal");
+} else {
+    console.log("Fast");
+}
+
+
+// Q5. Height Category
+let height = 165;
+
+if (height < 150) {
+    console.log("Short");
+} else if (height <= 170) {
+    console.log("Average");
+} else {
+    console.log("Tall");
+}
+
+
+// Q6. Weekday or Weekend
+let day = 6;
+
+if (day >= 1 && day <= 5) {
+    console.log("Weekday");
+} else if (day === 6 || day === 7) {
+    console.log("Weekend");
+} else {
+    console.log("Invalid Day");
+}
+
+
+// Q7. Electricity Bill
+let units = 120;
+let bill;
+
+if (units <= 50) {
+    bill = units * 2;
+} else if (units <= 150) {
+    bill = units * 4;
+} else {
+    bill = units * 6;
+}
+
+console.log("Electricity Bill: ₹" + bill);
+
+
+// Q8. Attendance Percentage
+let attendance = 82;
+
+if (attendance >= 90) {
+    console.log("Excellent");
+} else if (attendance >= 75) {
+    console.log("Good");
+} else if (attendance >= 50) {
+    console.log("Satisfactory");
+} else {
+    console.log("Poor");
+}
+
+
+// Q9. Highest of Three Subject Marks
+let subject1 = 78;
+let subject2 = 92;
+let subject3 = 85;
+
+if (subject1 >= subject2 && subject1 >= subject3) {
+    console.log("Highest Marks: " + subject1);
+} else if (subject2 >= subject1 && subject2 >= subject3) {
+    console.log("Highest Marks: " + subject2);
+} else {
+    console.log("Highest Marks: " + subject3);
+}
+
+
+// Q10. Number Type
+let number11 = -7;
+
+if (number11 === 0) {
+    console.log("Zero");
+} else if (number11 > 0 && number11 % 2 === 0) {
+    console.log("Positive Even");
+} else if (number11 > 0 && number11 % 2 !== 0) {
+    console.log("Positive Odd");
+} else if (number11 < 0 && number11 % 2 === 0) {
+    console.log("Negative Even");
+} else {
+    console.log("Negative Odd");
+}
+
+
+
+// ==================== D] Nested if Statement ====================
+
+// Q1. Greater Than 10 and Divisible by 3
+let number12 = 15;
+
+if (number12 > 10) {
+    if (number12 % 3 === 0) {
+        console.log("Greater than 10 and Divisible by 3");
+    } else {
+        console.log("Greater than 10 but Not Divisible by 3");
+    }
+}
+
+
+// Q2. Voting with Voter ID
+let age3 = 22;
+let hasVoterId = true;
+
+if (age3 >= 18) {
+    if (hasVoterId) {
+        console.log("Can Vote");
+    }
+}
+
+
+// Q3. Passed with Distinction
+let marks4 = 85;
+
+if (marks4 >= 40) {
+    if (marks4 >= 80) {
+        console.log("Passed with Distinction");
+    } else {
+        console.log("Passed");
+    }
+} else {
+    console.log("Failed");
+}
+
+
+// Q4. ATM System
+let enteredPin = 1234;
+let correctPin = 1234;
+let balance = 5000;
+let withdrawal = 2000;
+
+if (enteredPin === correctPin) {
+    if (balance >= withdrawal) {
+        balance = balance - withdrawal;
+        console.log("Withdrawal Successful");
+        console.log("Remaining Balance: ₹" + balance);
+    } else {
+        console.log("Insufficient Balance");
+    }
+} else {
+    console.log("Incorrect PIN");
+}
+
+
+// Q5. Leap Year
+let year3 = 2024;
+
+if (year3 % 4 === 0) {
+    if (year3 % 100 === 0) {
+        if (year3 % 400 === 0) {
+            console.log("Leap Year");
+        } else {
+            console.log("Not a Leap Year");
+        }
+    } else {
+        console.log("Leap Year");
+    }
+} else {
+    console.log("Not a Leap Year");
+}
+
+
+// Q6. Valid Email
+let email = "student@example.com";
+
+if (email.includes("@")) {
+    if (email.endsWith(".com")) {
+        if (email.length > 10) {
+            console.log("Valid Email");
+        }
+    }
+}
+
+
+// Q7. Online Shopping Discount
+let cartTotal = 2000;
+let isPremiumMember = true;
+let finalAmount;
+
+if (cartTotal >= 1000) {
+    if (isPremiumMember) {
+        finalAmount = cartTotal - cartTotal * 0.20;
+    } else {
+        finalAmount = cartTotal - cartTotal * 0.10;
+    }
+} else {
+    finalAmount = cartTotal;
+}
+
+console.log("Final Amount: ₹" + finalAmount);
+
+
+// Q8. Positive, Even, and Divisible by 4
+let number13 = 12;
+
+if (number13 > 0) {
+    if (number13 % 2 === 0) {
+        if (number13 % 4 === 0) {
+            console.log("Positive Even and Divisible by 4");
+        }
+    }
+}
+
+
+// Q9. Job Eligibility
+let age4 = 25;
+let hasDegree = true;
+let experience = 3;
+
+if (age4 >= 21 && age4 <= 30) {
+    if (hasDegree) {
+        if (experience >= 2) {
+            console.log("Eligible for Interview");
+        }
+    }
+}
+
+
+// Q10. Exam Eligibility
+let isPresent = true;
+let internalMarks = 35;
+let externalMarks = 40;
+
+if (isPresent) {
+    if (internalMarks >= 30) {
+        if (externalMarks >= 35) {
+            console.log("Eligible for Final Exam");
+        }
+    }
+}
+
