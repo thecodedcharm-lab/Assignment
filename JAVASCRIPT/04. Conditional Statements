@@ -430,7 +430,7 @@ let isPremiumMember = true;
 let finalAmount;
 
 if (cartTotal >= 1000) {
-    if (isPremiumMember) {
+    if (isPremiumMember == true) {
         finalAmount = cartTotal - cartTotal * 0.20;
     } else {
         finalAmount = cartTotal - cartTotal * 0.10;
