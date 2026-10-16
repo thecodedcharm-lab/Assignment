@@ -412,10 +412,12 @@ if (year3 % 4 === 0) {
 
 // Q6. Valid Email
 let email = "student@example.com";
+let l = email.length
 
 if (email.includes("@")) {
-    if (email.endsWith(".com")) {
-        if (email.length > 10) {
+    let lastChar=email[l-4]+email[l-3]+email[l-2]+email[l-1];
+    if (let lastChar ==".com")) {
+        if (l > 10) {
             console.log("Valid Email");
         }
     }
