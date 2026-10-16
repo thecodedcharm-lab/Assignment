@@ -416,7 +416,7 @@ let l = email.length
 
 if (email.includes("@")) {
     let lastChar=email[l-4]+email[l-3]+email[l-2]+email[l-1];
-    if (let lastChar ==".com")) {
+    if (lastChar ==".com") {
         if (l > 10) {
             console.log("Valid Email");
         }
