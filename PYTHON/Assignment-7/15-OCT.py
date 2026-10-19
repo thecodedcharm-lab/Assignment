@@ -91,3 +91,46 @@ while num >= 1:
         Sum=Sum+num
     num-=1
 print(Sum)
+
+# # Level 3: Simple Repeated Calculations
+
+# Q31. Calculate the Total Cost
+price = int(input("PRICE = "))
+qty = int(input("QUANTITY = "))
+total_cost = 0  
+count = 0
+while count<qty:
+    total_cost+=price
+    count+=1
+print(total_cost)
+
+# Q32. Calculate Total Savings
+
+DAILY_SAVING = int(input("DAILY_SAVING = "))
+DAYS = int(input("DAYS = "))
+total_amount=0
+count=0
+while count<DAYS:
+    total_amount+=DAILY_SAVING
+    count+=1
+print(total_amount)
+
+#  Q33. Calculate a Number Raised to a Power
+
+BASE=int(input("BASE = "))
+POWER=int(input("POWER = "))
+result=1
+count=0
+while count<POWER:
+    result *= BASE
+    count+=1
+print(result)
+
+# Q34. Calculate Factorial
+
+N = int(input("Enter Number : "))
+result = 1
+while N > 1:
+    result *= N
+    N -= 1
+print(result)
