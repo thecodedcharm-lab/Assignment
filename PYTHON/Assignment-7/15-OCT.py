@@ -134,3 +134,61 @@ while N > 1:
     result *= N
     N -= 1
 print(result)
+
+# Q35. Find the Sum from START to END
+
+start = int(input("START = "))
+end = int(input("END = "))
+sum=0
+while start<=end:
+    sum=sum+start
+    start=start+1
+print(sum)
+
+Level 4: Read the Condition Carefully
+
+# Q36. Count Down by Two
+
+N = int(input("Enter Number : "))
+while N >=2:
+    print (N)
+    N-=2
+
+# Q37. Repeatedly Divide by Two
+
+N = int(input("Enter Number : "))
+
+while N > 0:
+    N = N // 2  
+    print(N)
+
+# Q38. Count How Many Steps Are Needed
+
+N = int(input("Number = "))
+count=0
+while N>=0:
+    N-=3
+    count+=1
+print(count)
+   
+# Q39. Save Until the Target Is Reached
+
+saved = int(input("SAVED = "))
+daily_amount = int(input("DAILY_AMOUNT = "))
+target = int(input("TARGET = "))
+total_saving=saved
+days=0
+while total_saving<= target:
+    total_saving+=daily_amount
+    days+=1
+
+print(days)
+
+# Q40. Print a Number Sequence in Reverse Steps
+
+start = int(input("START = "))
+step = int(input("STEP = "))
+while start>=0:
+    print(start)
+    start=start-step
+ 
