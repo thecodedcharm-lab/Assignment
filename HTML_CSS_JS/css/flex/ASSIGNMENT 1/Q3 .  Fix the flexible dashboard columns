@@ -1,0 +1,72 @@
+<!-- Question 3 — Fix the flexible dashboard columns -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3 — Fix the flexible dashboard columns</title>
+    <style>
+
+* {
+    box-sizing: border-box;
+}
+
+.dashboard {
+    display: flex;
+    width: 100%;
+    height:90vh;
+    flex-direction: row;
+    gap: 15px;
+    align-items: stretch;
+}
+
+.sidebar {
+    flex: 1 1 200px;
+    background: #ddd;
+}
+
+.main-content {
+    flex: 2 1 400px;
+    background: #e8f0ff;
+    min-width: 0;
+}
+
+.activity-panel {
+    flex: 1 1 250px;
+    background: #eee;
+}
+
+.dashboard  * {
+    padding: 15px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+  <aside class="sidebar">
+    <h3>Sidebar</h3>
+    <p>Dashboard</p>
+    <p>Analytics</p>
+    <p>Settings</p>
+  </aside>
+
+  <main class="main-content">
+    <h2>Dashboard Overview</h2>
+    <p>This is the main content area.</p>
+    <p>
+      Add more content here to test how the layout
+      responds when the available space changes.
+    </p>
+  </main>
+
+  <aside class="activity-panel">
+    <h3>Recent Activity</h3>
+    <p>New user registered</p>
+    <p>Order completed</p>
+  </aside>
+</div>
+</body>
+</html>
