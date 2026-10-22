@@ -192,3 +192,140 @@ for (; NUM > 0; NUM = Math.floor(number / 2)) {
     binary = (NUM % 2) + binary;
 }
 console.log("Binary:", binary);
+
+// Part C-a: `break` Inside a `for` Loop
+
+// Q1. Find the First Occurrence of Number 7
+
+
+let numbers = [3, 5, 7, 9, 7, 2];
+
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] === 7) {
+        console.log("Number 7 found at index:", i);
+        break;
+    }
+}
+
+
+
+// Number 7 found at index: 2
+
+
+// Q2. Password Checker
+
+
+let correctPassword = "1234";
+let accessGranted = false;
+
+for (let i = 1; i <= 5; i++) {
+    let password = "5678"
+
+    if (password === correctPassword) {
+        console.log("Access granted");
+        accessGranted = true;
+        break;
+    }
+}
+
+if (accessGranted === false) {
+    console.log("Account locked");
+}
+
+// Q3. Add Numbers Until the Sum Exceeds 100
+
+let sum = 0;
+
+for (let i = 1; ; i++) {
+    sum += i;
+
+    if (sum > 100) {
+        console.log("Last number added:", i);
+        console.log("Sum:", sum);
+        break;
+    }
+}
+
+
+//Q4. Find the First Name Starting with S
+
+let names = ["Riya", "Aman", "Sneha", "Karan", "Sahil"];
+
+for (let i = 0; i < names.length; i++) {
+    if (names[i][0] === "S") {
+        console.log("First name starting with S:", names[i]);
+        break;
+    }
+}
+
+
+// Q5. Stop at the First Perfect Square Greater Than 20
+
+
+for (let i = 1; i <= 50; i++) {
+    if (i > 20 && Number.isInteger(Math.sqrt(i))) {
+        console.log("First perfect square greater than 20:", i);
+        break;
+    }
+}
+
+
+// // Part C-b: `continue` Inside a `for` Loop
+
+// Q1. Print Numbers from 1 to 30, Skipping Multiples of 4
+
+for (let i = 1; i <= 30; i++) {
+    if (i % 4 === 0) {
+        continue;
+    }
+
+    console.log(i);
+}
+
+// Q2. Sum of Positive Numbers
+
+let num = [10, -5, 20, -8, 15, -3];
+let Sum = 0;
+
+for (let i = 0; i < num.length; i++) {
+    if (num[i] <= 0) {
+        continue;
+    }
+
+    Sum += num[i];
+}
+
+console.log("Sum of positive numbers:", sum);
+
+// Q3. Print Characters of Hello World, Skipping Spaces
+
+let str = "Hello World";
+for (let i = 0; i < str.length; i++) {
+    if (str[i] === " ") {
+        continue;
+    }
+
+    console.log(str[i]);
+}
+
+// Q4. Multiplication Table of 6, Skipping Products Divisible by 5
+
+for (let i = 1; i <= 12; i++) {
+    let product = 6 * i;
+
+    if (product % 5 === 0) {
+        continue;
+    }
+
+    console.log("6 x " + i + " = " + product);
+}
+// Q5. Print Ages of People Eligible to Vote
+
+let ages = [12, 18, 25, 15, 30, 17, 22];
+
+for (let i = 0; i < ages.length; i++) {
+    if (ages[i] < 18) {
+        continue;
+    }
+    console.log("Eligible age:", ages[i]);
+}
