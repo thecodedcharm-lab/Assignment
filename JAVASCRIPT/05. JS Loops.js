@@ -215,22 +215,21 @@ for (let i = 0; i < numbers.length; i++) {
 // Q2. Password Checker
 
 
-let correctPassword = "1234";
-let accessGranted = false;
-
-for (let i = 1; i <= 5; i++) {
-    let password = "5678"
-
-    if (password === correctPassword) {
-        console.log("Access granted");
-        accessGranted = true;
-        break;
+let password = 1234;
+let flag = false
+for ( let i =1 ; i <= 5 ; i++ ){
+    let enterPasword = prompt("Enter the Password : ");
+    if (parseInt(enterPasword)===password){
+        console.log("Access Granted")
+        flag = true;
+        break
     }
 }
 
-if (accessGranted === false) {
-    console.log("Account locked");
+if (!flag){
+    console.log("Account Locked")
 }
+
 
 // Q3. Add Numbers Until the Sum Exceeds 100
 
