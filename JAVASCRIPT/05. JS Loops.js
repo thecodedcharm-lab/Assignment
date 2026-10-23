@@ -328,3 +328,71 @@ for (let i = 0; i < ages.length; i++) {
     }
     console.log("Eligible age:", ages[i]);
 }
+
+// Part D] Reverse For Loop
+
+// 1.
+// Write a reverse for loop that prints all numbers from 50 
+// down to 1 that are divisible by 3 but not divisible by 9.
+
+for (let i=50 ; i>=1;i--){
+    if(i%3==0 && i%9!=0){
+        console.log(i)
+    }
+}
+
+// 2.
+// Write a reverse for loop that calculates the product of 
+// all odd digits of a given number (example: 4729 → 7 × 9 = 63).
+
+let givenNumber = "4729"
+let product = 1
+for(let i=givenNumber.length ; i>0 ; i-- ){
+    if (i % 2 != 0){
+        product=product*Number(givenNumber[i])
+    }
+}
+console.log("Product of all odd digits : ", product)
+
+//3.
+// Given the string "Programming", use a reverse for loop 
+// to create a  new string that contains only the consonants 
+// in reverse order.
+
+let string = "Programming"
+let bag = ""
+
+for (let i = string.length - 1; i >= 0; i--) {
+    if (string[i] != "A" && string[i] != "E" && string[i] != "I" && string[i] != "O" && string[i] != "U" && string[i] != "a" && string[i] != "e" && string[i] != "i" && string[i] != "o" && string[i] != "u") {
+        bag += string[i]
+    }
+}
+
+console.log(bag)
+
+// 4.
+// Write a reverse for loop that prints the first 15 Fibonacci numbers
+// in reverse order (starting from the 15th number down to 0).
+
+// 5.
+// Use a reverse for loop to check whether a given number is a
+// palindrome by comparing digits from both ends (without converting 
+// the number to a string)
+
+// // 6.
+// // Given an array [12, 45, 7, 23, 56, 89, 34], use a reverse
+// // for loop to find the largest number that is less than 50 
+// // (do not use any built-in methods).
+const arr = [12, 45, 7, 23, 56, 89, 34];
+let largest = -1; 
+for (let i = arr.length - 1; i >= 0; i--) {
+  if (arr[i] < 50 && arr[i] > largest) {
+    largest = arr[i];
+  }
+}
+
+if (largest !== -1) {
+  console.log("The largest number less than 50 is:", largest);
+} else {
+  console.log("No number is less than 50.");
+}
