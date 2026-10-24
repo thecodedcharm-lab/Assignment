@@ -396,3 +396,83 @@ if (largest !== -1) {
 } else {
   console.log("No number is less than 50.");
 }
+
+// Part F]: Do-While Loop
+
+// Q1. Print Numbers in Reverse
+let i = 10
+do{
+    console.log(i)
+    i--
+}while(i>=1)
+
+// Q2. Print Even Numbers
+let i = 2
+do{
+    console.log(i)
+    i+=2
+}while(i<=20)
+
+// Q3. Sum of Natural Numbers
+let sum = 0
+let n = Number(prompt("Input : "))
+do{
+  sum+=n
+  n--
+}while(n>=1)
+console.log("The sum is : "+ sum)
+
+// Q4. Product of Digits
+let product = 1
+let n = Number(prompt("Input : "))
+do{
+  let d = n % 10
+  product *= d
+  n=Math.floor(n/10)
+}while(n>0)
+console.log("The product of digit is :" +product)
+
+// Q5. Find the First Digit
+let firstDigit;
+let n = Number(prompt("Input : "));
+do{
+  n=Math.floor(n/10)
+    firstDigit=n%10
+  }while(n>10)
+console.log(firstDigit)
+
+// Q6. Calculate a Power
+let base = Number(prompt("Base = "));
+let Exponent = Number(prompt("Exponent = "));
+let result = 1;
+do{result*=base
+  Exponent--
+}while(Exponent >=1)
+console.log(result)
+
+// Q7. Print Multiples with Conditions
+let i = 1
+do{
+    if (i % 4 == 0 && i % 8 != 0){
+        console.log(i)
+    }
+    i++
+}while(i<=100)
+
+//Q8. Check a Palindrome Number
+let n = Number(prompt("Input: "))
+let originalNumber = n
+reverseNumber = 0
+do{
+  let d = n % 10;
+  reverseNumber = (reverseNumber*10)+d;
+  n=Math.floor(n/10)
+}while(n>0)
+if (reverseNumber === originalNumber){
+  console.log(`${originalNumber} is a Palindrome number`)
+}else{
+  console.log(`${originalNumber} is not a Palindrome number`)
+}
+
+// Q9. Find the Greatest Common Divisor (GCD)
+let i 
