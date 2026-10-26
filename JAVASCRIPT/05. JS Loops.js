@@ -475,4 +475,21 @@ if (reverseNumber === originalNumber){
 }
 
 // Q9. Find the Greatest Common Divisor (GCD)
-let i 
+let a = 12;
+let b = 18;
+let smallest;
+if (a<=b){
+    smallest=a
+}else{
+    smallest=b
+}
+
+let i = 1;
+let hcf = 1;
+do{
+    if (a % i == 0 && b % i == 0){
+        hcf=i
+    }
+    i++
+}while (i<=smallest )
+console.log(hcf)
