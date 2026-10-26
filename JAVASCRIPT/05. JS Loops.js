@@ -490,6 +490,25 @@ do{
     if (a % i == 0 && b % i == 0){
         hcf=i
     }
+
+  // Q10. Convert Decimal to Binary
+
+let num = 13; 
+let binary = "";
+let temp = num;
+
+do {
+    binary = (temp % 2) + binary;
+    temp = Math.floor(temp / 2);
+} while (temp > 0);
+
+if (num === 0) {
+    binary = "0";
+}
+
+console.log("Input:", num);
+console.log("Output:", binary);
+
     i++
 }while (i<=smallest )
 console.log(hcf)
