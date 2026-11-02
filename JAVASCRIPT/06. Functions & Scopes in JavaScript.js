@@ -159,16 +159,19 @@ console.log(calculateArea(8,9))
 
 // 4. What is the difference between a parameter and an argument? Explain with a short example.
 
-// Parameter: Variable defined in a function.
-// Argument: Actual value passed when calling a function.
+Parameter: Variable defined in a function.
+Argument: Actual value passed when calling a function.
+    
 function greet(name) {  // Parameter
     console.log(name);
 }
 greet("Riya");  // Argument
 
 // 5. Can a function have parameters but be called without arguments? What happens in that case? Explain briefly.
-// The parameter gets the value undefined.
-// No error occurs unless the function requires a valid value.
+
+The parameter gets the value undefined.
+No error occurs unless the function requires a valid value.
+    
 function greet(name) {
     console.log(name);
 }
