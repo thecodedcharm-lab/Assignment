@@ -1,4 +1,50 @@
 //=====================================================================================================================================================================
+Section 1: What Is a Function?
+//=====================================================================================================================================================================
+    
+// 1. Why do we use functions instead of writing the same code again and again? Explain with one simple example.
+
+To reuse code and avoid repetition.
+Example: Write a welcome message function once and call it whenever needed.
+    
+// 2. List any four advantages of functions and write one line for each advantage.
+
+Reusability: Use code multiple times.
+Less repetition: Avoid duplicate code.
+Easy debugging: Find errors easily.
+Readability: Makes code clear and organized.
+    
+// 3. Imagine you have to display a welcome message at 6 different places in your program. How will a function help you here?
+
+Create one welcome() function.
+Call it 6 times wherever needed.
+    
+// 4. Show the same code written twice without a function and once with a function.
+
+Without function:
+
+console.log("Welcome");
+console.log("Welcome");
+
+With function:
+
+function welcome() {
+    console.log("Welcome");
+}
+welcome();
+welcome();    
+    
+// 5. Give one real-life analogy that explains the idea of a function.
+
+A washing machine performs the same task whenever we press the start button.
+Similarly, a function performs a task whenever called.
+    
+// 6. Why do functions make debugging easier? Answer in 1–2 lines.
+
+Errors can be found and fixed in one place.
+This saves time and effort.
+
+//=====================================================================================================================================================================
 // Section 2: Function Declaration
 //=====================================================================================================================================================================
 
@@ -163,13 +209,13 @@ function getFullName(firstName, lastName){
 
 // 4. What does a function return if there is no return statement inside it?
 
-// It returns undefined by default.
+It returns undefined by default.
 
 // 5. Why do we use the return statement in a function instead of just using console.log() inside the function? Explain in 2–3 lines.
 
-// return: Sends the result back to the caller for further use.
-// console.log(): Only displays the result on the console.
-// return makes the result reusable.
+return: Sends the result back to the caller for further use.
+console.log(): Only displays the result on the console.
+return makes the result reusable.
 
 //=====================================================================================================================================================================
 // Section 7: Why Use Functions? (Real-world Example)
@@ -212,13 +258,13 @@ console.log(average(70, 60, 80)); // For Mahir
 
 // 4. How do functions help in reducing code repetition? Explain with one real-world example.
 
-// Write code once and reuse it whenever needed.
-// Example: A calculator uses one addition function for multiple calculations.
+Write code once and reuse it whenever needed.
+Example: A calculator uses one addition function for multiple calculations.
 
 // 5. Mention any three advantages of using functions in a program.
 
-// Reusability: Use code multiple times.
-// Less repetition: Avoid writing the same code again.
-// Easy debugging: Find and fix errors easily.
+Reusability: Use code multiple times.
+Less repetition: Avoid writing the same code again.
+Easy debugging: Find and fix errors easily.
 
 //=====================================================================================================================================================================
